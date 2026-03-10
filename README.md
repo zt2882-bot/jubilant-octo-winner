@@ -14,6 +14,36 @@
 GitHub: [zt2882-bot](https://github.com/zt2882-bot)
 理论原创 · 数学建模 · 工程化实现
 
+---
+
+Project Summary
+
+Project Title: Research on the Original Numeral System and the Underlying Structure of the Universe
+Core Repository: jubilant-octo-winner
+
+Overview
+
+This project re-examines the ontological foundation of numeral system design, proposing that the binary system is not merely a human-made tool for calculation, but rather a mathematical mapping of the universe‘s dualistic oscillation-convergence law. By introducing original concepts such as “numeral system noise reduction” and “topological oscillation-convergence,” the project demonstrates the rationality of “0” and “1” as the fundamental structural units of the universe, and explores the deep connections between mathematics, physics, information science, and ancient Chinese philosophy (I Ching).
+
+Core Paper
+
+· "On the Design Rationality of the Binary System (Revised Edition)"
+    This paper systematically demonstrates the logical inevitability of the binary system as the “original numeral system” from three dimensions: mathematical ontology, topological structure, and the laws of modern physics. It strictly defines core concepts such as “numeral system noise reduction” and “topological oscillation-convergence,” revises the argumentative leaps of the earlier version, and establishes a self-consistent framework within the philosophy of science.
+
+Extended Research
+
+1. Non-Markovian Extension: The Ramanujan Mathematical Framework
+      Exploring the intrinsic connection between the binary foundation and the intuitive mathematical formulas discovered by Ramanujan, reinterpreting modular forms and fractal structures from the perspective of non-Markovian processes.
+2. An Open Quantitative Framework for Image Information Toward Human Consensus
+      Based on the “unambiguity” of binary encoding, this research designs a method for quantifying image information that can be used to form human collective consensus, aiming to achieve lossless cross-cultural and cross-linguistic information transmission.
+3. The Correspondence Between Topological Oscillation-Convergence and Physical Reality
+      Expanding on Section 5.3 of the core paper, this study delves into the strict isomorphism between binary phenomena in quantum mechanics (superposition/collapse) and cosmology (singularity/expansion) and the 0/1 foundation.
+
+Research Orientation
+
+This project belongs to the interdisciplinary field of philosophy of science and foundational mathematics. It does not pursue short-term engineering applications but aims to provide a foundational perspective on numeral systems that aligns with the laws of the universe for the information age. All arguments are supported by traceable logical chains and cross-cultural validation. Scholars and enthusiasts are welcome to participate in discussion and further development.
+
+
 项目名称：本源数制与宇宙底层结构研究
 核心仓库：jubilant-octo-winner
 
