@@ -1,0 +1,13 @@
+# GitHub Pages 配置文件
+
+theme: jekyll-theme-minimal
+title: 深渊实验室 - Jubilant Octo Winner
+description: 元知识整合与高熵输出的研究网络
+show_downloads: true
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# 站点配置
+url: "https://zt2882-bot.github.io/jubilant-octo-winner"
+baseurl: "/jubilant-octo-winner"
