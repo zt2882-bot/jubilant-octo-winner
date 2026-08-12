@@ -3,7 +3,6 @@
 **入门** | EN
 
 ---
-
 # Window Opener's Manual · Ximing Project V0.2
 ## A Whitepaper on High-Risk Cognitive Operations
 
