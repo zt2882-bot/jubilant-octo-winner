@@ -18,13 +18,13 @@
 
 6.2.1 非马尔可夫转移核
 
-设系统在离散时间 t=1,2,\dots 的状态为 X_t，取值于六维空间 $\mathbb{V}$_6 = $\mathbb{Z}$^6（或离散子集）。记历史 $\mathcal{H}$_t = \{X_1,X_2,\dots,X_{t-1}\}。
+设系统在离散时间 t=1,2,\dots 的状态为 X_t，取值于六维空间 $$\mathbb{V}$$_6 = $$\mathbb{Z}$$^6（或离散子集）。记历史 $$\mathcal{H}$$_t = \{X_1,X_2,\dots,X_{t-1}\}。
 
 定义6.1（非马尔可夫转移核）
-称映射 $\mathcal{K}$_{$\text{NM}$}: $\mathbb{V}$_6 $\times$ \bigcup_{t} $\mathcal{H}$_t $\to$ [0,1] 为非马尔可夫转移核，若它满足：
+称映射 $$\mathcal{K}$$_{$$\text{NM}$$}: $$\mathbb{V}$$_6 $\times$ \bigcup_{t} $$\mathcal{H}$$_t $\to$ [0,1] 为非马尔可夫转移核，若它满足：
 
-1. $\sum$_{x_t $\in$ $\mathbb{V}$_6} $\mathcal{K}$_{$\text{NM}$}(x_t \mid $\mathcal{H}$_t) = 1（归一性）；
-2. $\mathcal{K}$_{$\text{NM}$}(x_t \mid $\mathcal{H}$_t) 一般不能简化为 $\mathcal{K}$_{$\text{NM}$}(x_t \mid x_{t-1})，即不存在有限阶马尔可夫近似。
+1. $\sum$_{x_t $\in$ $$\mathbb{V}$$_6} $$\mathcal{K}$$_{$$\text{NM}$$}(x_t \mid $$\mathcal{H}$$_t) = 1（归一性）；
+2. $$\mathcal{K}$$_{$$\text{NM}$$}(x_t \mid $$\mathcal{H}$$_t) 一般不能简化为 $$\mathcal{K}$$_{$$\text{NM}$$}(x_t \mid x_{t-1})，即不存在有限阶马尔可夫近似。
 
 注：此定义不预设任何独立性假设，完整保留历史依赖。
 
@@ -48,7 +48,7 @@ $$
 \mathcal{I} = \lim_{T\to\infty} \frac{1}{T} \sum_{t=1}^T H_{\text{NM}}(X_t \mid \mathcal{H}_t),
 $$
 
-其中 H_{$\text{NM}$}(X_t \mid $\mathcal{H}$_t) 是后面将定义的非马尔可夫条件熵。若该极限存在且有限，则表明系统在复杂演化中保持某种深层的统计守恒。
+其中 H_{$$\text{NM}$$}(X_t \mid $$\mathcal{H}$$_t) 是后面将定义的非马尔可夫条件熵。若该极限存在且有限，则表明系统在复杂演化中保持某种深层的统计守恒。
 
 ---
 
@@ -136,7 +136,7 @@ $$
 
 · 第一项：香农熵（基准）；
 · 第二项：模θ记忆项（$\alpha$>0 为权重）；
-· 第三项：罗杰斯-拉马努金约束项，R(t) = \left| $\text{LHS}$(q) - $\text{RHS}$(q) \right|（或对数比值）；
+· 第三项：罗杰斯-拉马努金约束项，R(t) = \left| $$\text{LHS}$$(q) - $$\text{RHS}$$(q) \right|（或对数比值）；
 · 第四项：长程记忆强度 $\phi$(t)（见定义6.2的离散形式）。
 
 6.5.2 离散形式（可直接编程实现）
@@ -211,9 +211,9 @@ $$
 
 采用前五章中《千里江山图》与《蒙娜丽莎》的六维熵值作为静态输入，但需要生成时间序列（例如模拟观看过程中的熵值波动）。假设我们通过某种方式得到了两条时间序列（长度 T=100），代入离散公式计算：
 
-· 取 q=0.5, $\alpha$=0.3, $\gamma$=0.2，得到两画的 H_{$\text{NM}$}[t] 序列及不变量 $\mathcal{I}$_{$\text{NM}$}：
-· 千里江山：$\mathcal{I}$_{$\text{NM}$} $\approx$ 4.32
-· 蒙娜丽莎：$\mathcal{I}$_{$\text{NM}$} $\approx$ 3.89
+· 取 q=0.5, $\alpha$=0.3, $\gamma$=0.2，得到两画的 H_{$$\text{NM}$$}[t] 序列及不变量 $$\mathcal{I}$$_{$$\text{NM}$$}：
+· 千里江山：$$\mathcal{I}$$_{$$\text{NM}$$} $\approx$ 4.32
+· 蒙娜丽莎：$$\mathcal{I}$$_{$$\text{NM}$$} $\approx$ 3.89
 
 该结果与两画的复杂度定性一致，且不变量稳定，初步验证了框架的有效性。更多系统验证需扩大数据集。
 
@@ -254,7 +254,7 @@ inv   : 当前累积的结构不变量（若累计次数>0），否则返回 Non
 
 6.10.2.1 非马尔可夫转移概率 p_t
 
-在实际系统中，p_t = P($\text{current}$ \mid $\text{history}$) 可以通过以下方式之一获得：
+在实际系统中，p_t = P($$\text{current}$$ \mid $$\text{history}$$) 可以通过以下方式之一获得：
 
 · 数据驱动：从足够多的样本中统计条件概率（需大量数据）；
 · 模型驱动：由领域知识或预训练的生成模型（如 Transformer）提供；
