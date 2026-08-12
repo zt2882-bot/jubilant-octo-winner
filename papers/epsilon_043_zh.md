@@ -33,7 +33,9 @@
 定义6.2（长程记忆函数）
 设系统状态序列 \{X_t\} 平稳（或渐近平稳），定义滞后 \tau 的自相关函数：
 
+$$
 \phi(\tau) = \lim_{T\to\infty} \frac{1}{T-\tau} \sum_{t=\tau+1}^T \langle X_t, X_{t-\tau} \rangle,
+$$
 
 其中 \langle \cdot,\cdot \rangle 为六维空间的内积。若存在常数 c>0,\beta>0 使得当 \tau\to\infty 时 \phi(\tau) \sim c \tau^{-\beta}（幂律衰减）或 \phi(\tau) 由模形式控制（如拉马努金级数），则称系统具有长程记忆，即非马尔可夫性。
 
@@ -42,7 +44,9 @@
 定义6.3（结构不变量）
 称如下极限为系统的结构不变量：
 
+$$
 \mathcal{I} = \lim_{T\to\infty} \frac{1}{T} \sum_{t=1}^T H_{\text{NM}}(X_t \mid \mathcal{H}_t),
+$$
 
 其中 H_{\text{NM}}(X_t \mid \mathcal{H}_t) 是后面将定义的非马尔可夫条件熵。若该极限存在且有限，则表明系统在复杂演化中保持某种深层的统计守恒。
 
@@ -52,7 +56,9 @@
 
 为了具体刻画非马尔可夫记忆，我们将每个状态分解为六个维度，每个维度携带特定信息：
 
+$$
 X_t = (v_{1t}, v_{2t}, v_{3t}, v_{4t}, v_{5t}, v_{6t}), \quad v_{it} \in \mathbb{Z}.
+$$
 
 每个维度的物理意义（可根据应用调整）：
 
@@ -73,13 +79,17 @@ X_t = (v_{1t}, v_{2t}, v_{3t}, v_{4t}, v_{5t}, v_{6t}), \quad v_{it} \in \mathbb
 
 拉马努金发现的模θ函数（mock theta functions）是一类特殊的幂级数，它们几乎满足模变换性质，但有一个“阴影”项破坏完全对称。例如二阶模θ函数：
 
+$$
 A(q) = \sum_{n=0}^{\infty} \frac{q^{(n+1)^2}}{(-q;q)_n},
+$$
 
 其中 (a;q)_n 为q-波赫哈默尔符号。
 
 我们将模θ函数解释为非对称长程记忆势：
 
+$$
 \Psi_{\text{Mock}}(t, q) = \sum_{k=1}^{t} \frac{q^{k^2}}{1 - q^{v_{5t}}},
+$$
 
 其中 q \in (0,1) 为模参数（控制记忆衰减速度），v_{5t} 为当前时刻的记忆深度。该式描述了历史路径对当前状态的贡献，其非对称性体现在指数上的 k^2 与分母中的 1-q^{v_{5t}} 耦合，模拟了记忆的时变衰减。
 
@@ -87,7 +97,9 @@ A(q) = \sum_{n=0}^{\infty} \frac{q^{(n+1)^2}}{(-q;q)_n},
 
 罗杰斯-拉马努金恒等式是一类深刻的整数分拆恒等式，例如：
 
+$$
 \prod_{n=0}^{\infty} \frac{1}{(1-q^{5n+1})(1-q^{5n+4})} = \sum_{n=0}^{\infty} \frac{q^{n^2}}{(1-q)(1-q^2)\cdots(1-q^n)}.
+$$
 
 我们将此恒等式解释为六维信息态空间的结构守恒律：
 
@@ -105,9 +117,19 @@ A(q) = \sum_{n=0}^{\infty} \frac{q^{(n+1)^2}}{(-q;q)_n},
 在连续六维空间上，定义概率密度 \rho(\vec{v},t)。系统的非马尔可夫信息熵为：
 
 \boxed{
+
+$$
 H_{\text{NM}}(t) = -\int_{\mathbb{V}_6} \rho(\vec{v},t) \ln \rho(\vec{v},t) \, d\vec{v}
+$$
+
+$$
 + \alpha \Psi_{\text{Mock}}(t,q)
+$$
+
+$$
 + \beta \, R(t) + \gamma \, \phi(t)
+$$
+
 }
 
 其中：
@@ -122,24 +144,44 @@ H_{\text{NM}}(t) = -\int_{\mathbb{V}_6} \rho(\vec{v},t) \ln \rho(\vec{v},t) \, d
 对于离散时间序列 \{X_t\}，定义时刻 t 的非马尔可夫条件熵：
 
 \boxed{
+
+$$
 H_{\text{NM}}[t] = -\sum_{x_t} p(x_t \mid \mathcal{H}_t) \ln p(x_t \mid \mathcal{H}_t)
+$$
+
+$$
 + \alpha \Psi_d[t] + \gamma \phi_d[t]
+$$
+
 }
 
 其中：
 
+$$
 · p(x_t \mid \mathcal{H}_t) = \mathcal{K}_{\text{NM}}(x_t \mid \mathcal{H}_t)；
+$$
+
 · 离散记忆项：
+
+$$
 \Psi_d[t] = \sum_{k=1}^{t} \frac{q^{k^2}}{1 - q^{v_{5t}}};
+$$
+
 · 离散长程记忆：
+
+$$
 \phi_d[t] = \frac{1}{t-\tau_0} \sum_{s=\tau_0+1}^{t} \langle X_s, X_{s-\tau_0} \rangle,
+$$
+
   其中 \tau_0 为预设的滞后（如 \tau_0=1 或由数据决定）。
 
 6.5.3 结构不变量（离散版）
 
 系统整体的结构指纹为：
 
+$$
 \mathcal{I}_{\text{NM}} = \frac{1}{T} \sum_{t=1}^{T} H_{\text{NM}}[t].
+$$
 
 在非马尔可夫系统中，该量应趋于常数，而马尔可夫系统则剧烈波动。
 
@@ -157,7 +199,9 @@ H_{\text{NM}}[t] = -\sum_{x_t} p(x_t \mid \mathcal{H}_t) \ln p(x_t \mid \mathcal
 
 在每一步 t，应检查罗杰斯-拉马努金恒等式的数值近似成立：
 
+$$
 \left| \sum_{n=0}^{t} \frac{q^{n^2}}{\prod_{k=1}^{n}(1-q^k)} - \prod_{n=0}^{t} \frac{1}{(1-q^{5n+1})(1-q^{5n+4})} \right| < \epsilon.
+$$
 
 若差值超过阈值 \epsilon，则提示当前参数或状态序列可能偏离非马尔可夫结构，需重新校准。
 
@@ -222,7 +266,9 @@ def NM6_d(
 
 计算当前时刻 t 的非对称长程记忆贡献：
 
+$$
 \Psi_d[t] = \sum_{k=1}^{t} \frac{q^{k^2}}{1 - q^{v_{5t}}}
+$$
 
 其中 v_{5t} 为当前状态向量的第五维（记忆深度）。此求和随 t 增长而增长，但可用递推加速：
 
@@ -233,27 +279,37 @@ def NM6_d(
 
 计算当前时刻与历史状态的滞后相关性（取滞后 \tau）：
 
+$$
 \phi_d[t] = \frac{1}{t - \tau} \sum_{s=\tau+1}^{t} \langle \vec{v}_s, \vec{v}_{s-\tau} \rangle
+$$
 
 其中内积 \langle \cdot,\cdot \rangle 为六维向量的点积。若 t \le \tau，定义 \phi_d[t] = 0。
 
 6.10.2.4 当前熵值计算
 
+$$
 H_{\text{NM}}[t] = -\sum_{\vec{v}_t} p_t \ln p_t \;+\; \alpha \Psi_d[t] \;+\; \gamma \phi_d[t]
+$$
 
 6.10.2.5 结构不变量累积
 
 维护全局累积和 sum_H 和计数 count，每步更新：
 
+$$
 \mathcal{I}_{\text{NM}} = \frac{\text{sum\_H}}{\text{count}}
+$$
 
 6.10.2.6 约束校验（可选）
 
 在每一步可验证罗杰斯-拉马努金恒等式的数值近似：
 
+$$
 \text{LHS} = \sum_{n=0}^{t} \frac{q^{n^2}}{\prod_{k=1}^{n}(1-q^k)}
+$$
 
+$$
 \text{RHS} = \prod_{n=0}^{t} \frac{1}{(1-q^{5n+1})(1-q^{5n+4})}
+$$
 
 若 |LHS - RHS| > ε，则警告参数或状态可能偏离非马尔可夫结构（建议 ε = 1e-6）。
 
