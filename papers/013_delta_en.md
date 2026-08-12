@@ -23,35 +23,53 @@ This paper aims to systematize this intuition into a theoretical framework of pr
 
 2 Definition of Probability Intensity
 
+$$
 Let a locally self-consistent probability bubble \mathcal{B} be described by its spatial position \mathbf{r} and internal probability distribution P_{\mathcal{B}}. Define probability intensity I(\mathcal{B}) as a comprehensive measure integrating the following five dimensions:
+$$
 
 2.1 Local Probability Value
 
+$$
 P_s = f(\Delta S_{\text{local}}, \Delta S_{\text{global}})
+$$
 
+$$
 where f is the phase transition trigger function, \Delta S_{\text{local}} is the local entropy change, and \Delta S_{\text{global}} is the environmental entropy change.
+$$
 
 2.2 Entropy Density
 
+$$
 \rho_S = -\int_{\mathcal{B}} P(\omega) \ln P(\omega) \, d\mu
+$$
 
 characterizes the degree of information compression. Higher entropy density indicates more ordered structure.
 
 2.3 Self-Consistency Index
 
+$$
 C_{\text{self}} = \frac{1}{1 + \text{Contradiction}(\mathcal{B})}
+$$
 
+$$
 where \text{Contradiction}(\mathcal{B}) measures the degree of logical contradiction within the bubble's rules. For a perfectly self-consistent bubble, C_{\text{self}} = 1.
+$$
 
 2.4 Coupling Strength
 
+$$
 J = \int_{\mathcal{B}} \mathbf{m} \cdot \mathbf{B} \, dV
+$$
 
+$$
 In a magnetic chip system, this is the interaction energy between magnetization direction \mathbf{m} and the global magnetic field \mathbf{B}. In general systems, it can be generalized as the coupling strength between the structure and its environment.
+$$
 
 2.5 Historical Accumulation
 
+$$
 H = \int_0^t \Delta S(\tau) \, d\tau
+$$
 
 records the total entropy change experienced by the bubble since its formation—the integral of "entropic imprint."
 
@@ -59,9 +77,13 @@ records the total entropy change experienced by the bubble since its formation�
 
 Probability intensity can be defined as a weighted product of the above five factors:
 
+$$
 I(\mathcal{B}) = P_s \cdot \rho_S \cdot C_{\text{self}} \cdot e^{\beta J} \cdot e^{\gamma H}
+$$
 
+$$
 where \beta, \gamma are coupling coefficients reflecting the contribution weights of different dimensions to structural stability. This form ensures that if any dimension approaches zero, the overall intensity drops sharply.
+$$
 
 ---
 
@@ -69,19 +91,25 @@ where \beta, \gamma are coupling coefficients reflecting the contribution weight
 
 3.1 Critical Threshold
 
+$$
 There exists a critical intensity I_{\text{crit}} such that when I > I_{\text{crit}}, the structure enters an attractor basin. In this regime, the system's evolution is dominated by the attractor, and random perturbations are suppressed.
+$$
 
 3.2 Intrinsic Gradient
 
 Define the probability intensity gradient:
 
+$$
 \nabla I_{\text{intrinsic}} = \left\| \frac{\partial I}{\partial \mathbf{r}} \right\|
+$$
 
 which characterizes the structure's intrinsic evolutionary drive—the "restoring force" toward the attractor.
 
 3.3 External Interference Intensity
 
+$$
 Define the external interference term \mathcal{E}_{\text{ext}}, including:
+$$
 
 · Environmental noise
 · Perturbations from external fields
@@ -91,7 +119,9 @@ Define the external interference term \mathcal{E}_{\text{ext}}, including:
 
 First Theorem of Probabilistic Dynamics (Criterion for Probabilistic Necessity):
 
+$$
 \boxed{\nabla I_{\text{intrinsic}} > \|\mathcal{E}_{\text{ext}}\| \quad \text{and} \quad I > I_{\text{crit}}}
+$$
 
 If and only if both conditions are satisfied, the future evolution path of the structure is probabilistically necessary—i.e., the system will inevitably converge to its attractor, and subsequent history merely unfolds the process.
 
@@ -103,42 +133,71 @@ Proof Sketch: In the dynamical equation of a probability bubble, when the intrin
 
 4.1 Evolution of the Probability Field
 
+$$
 Let the overall probability field be \mathcal{P}(\mathbf{r}, t). Its evolution is described by the following nonlinear partial differential equation:
+$$
 
+$$
 \frac{\partial \mathcal{P}}{\partial t} = \nabla \cdot \left( D \nabla \frac{\delta \mathcal{S}}{\delta \mathcal{P}} \right) + \mathcal{F}(I) \cdot \mathcal{P} + \mathcal{E}_{\text{ext}}(\mathbf{r}, t)
+$$
 
 where:
 
 · The first term is entropy diffusion, driven by the variational derivative of entropy.
+
+$$
 · The second term is a nonlinear feedback term; \mathcal{F}(I) is a proliferation function dependent on probability intensity.
+$$
+
 · The third term represents external interference.
 
 4.2 Evolution of Probability Intensity
 
 Probability intensity itself satisfies a reaction-diffusion equation:
 
+$$
 \frac{\partial I}{\partial t} = \alpha \nabla^2 I + \beta I (1 - I/I_{\text{max}}) - \gamma I + \eta(t)
+$$
 
 where:
 
+$$
 · \alpha \nabla^2 I represents spatial diffusion.
+$$
+
+$$
 · \beta I (1 - I/I_{\text{max}}) represents logistic growth (self-reinforcement).
+$$
+
+$$
 · -\gamma I represents decay (consumption by entropy diffusion).
+$$
+
+$$
 · \eta(t) represents random noise.
+$$
 
 4.3 Phase Transition Trigger Condition
 
 Local phase transitions are triggered in regions with large probability intensity gradients:
 
+$$
 P_{\text{trigger}} = \Theta(|\nabla I| - I_{\text{th}})
+$$
 
+$$
 where \Theta is the Heaviside step function, and I_{\text{th}} is the critical intensity gradient.
+$$
 
 4.4 Attractor Locking
 
+$$
 When I > I_{\text{crit}} and \nabla I_{\text{intrinsic}} > \|\mathcal{E}_{\text{ext}}\|, the nonlinear terms dominate the equation, and random terms become negligible perturbations. The system enters the attractor basin, and evolution is governed by a deterministic equation:
+$$
 
+$$
 \frac{\partial \mathcal{P}}{\partial t} \approx \mathcal{F}(I) \cdot \mathcal{P} + \text{small perturbations}
+$$
 
 ---
 
