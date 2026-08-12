@@ -15,9 +15,17 @@
 1 引言
 
 概率泡宇宙理论[1]将宇宙描述为嵌套的自洽概率空间，结构的生成与演化由概率强度 I 及其梯度驱动。随后建立的概率动力学[2]给出了概率强度场的演化方程：
+
+$$
 \frac{\partial I}{\partial t} = \alpha \nabla^2 I + \beta I (1 - I/I_{\text{max}}) - \gamma I + \eta(t),
+$$
+
 其中 \alpha 为扩散系数，\beta 为自增强系数，\gamma 为衰减系数，\eta 为随机噪声。该方程在弱场近似下可线性化为：
+
+$$
 \alpha \nabla^2 \psi - m^2 \psi = \kappa \rho,
+$$
+
 其中 \psi = I - I_0 是背景场 I_0 上的扰动，m^2 = \beta I_0 / I_{\text{max}}，\rho 为物质密度源项，\kappa 为耦合常数。
 
 长期以来，引力被视为一种基本的相互作用，与质量直接相关。但在概率动力学视角下，引力可被重新解释为概率强度梯度的宏观表现：物质通过改变局部的概率强度分布，在其周围形成一个概率强度的“凹陷”或“山峰”，而其他概率泡（如测试粒子）则沿着梯度方向运动，表现为引力吸引。这一思想将引力纳入更统一的概率场框架，为理解引力的本质、暗物质的可能替代以及引力子质量起源提供了新的数学工具。
@@ -29,13 +37,29 @@
 2 概率强度场与引力势的对应
 
 设背景概率强度为 I_0，在静态弱场近似下，概率强度扰动 \psi = I - I_0 满足线性化方程：
+
+$$
 \alpha \nabla^2 \psi - m^2 \psi = \kappa \rho. \tag{1}
+$$
+
 对于点源质量 M，密度分布为 \rho(\mathbf{r}) = M \delta(\mathbf{r})。为得到合理的引力吸引（即测试粒子应向高概率强度区域运动），我们调整耦合符号，取源项为 -\kappa \rho，则方程变为：
+
+$$
 \alpha \nabla^2 \psi - m^2 \psi = -\kappa M \delta(\mathbf{r}). \tag{2}
+$$
+
 该方程的解为汤川势：
+
+$$
 \psi(r) = \frac{\kappa M}{4\pi \alpha} \frac{e^{-m r}}{r}. \tag{3}
+$$
+
 定义引力势 \phi 与概率强度扰动 \psi 成正比，即 \phi = -k \psi，其中 k > 0 为比例常数。则：
+
+$$
 \phi(r) = -\frac{k \kappa M}{4\pi \alpha} \frac{e^{-m r}}{r}. \tag{4}
+$$
+
 与牛顿引力势 \phi_N(r) = -\frac{GM}{r} 比较可知：
 · 当 m r \ll 1 时，e^{-m r} \approx 1，\phi(r) \approx -\frac{k \kappa M}{4\pi \alpha} \frac{1}{r}，与牛顿势形式一致，有效引力常数 G_{\text{eff}} = \frac{k \kappa}{4\pi \alpha}。
 · 当 m r 与 1 相当或更大时，势呈指数衰减，偏离牛顿引力。
@@ -48,15 +72,27 @@
 3.1 三维空间中的格林函数
 
 方程 (2) 的格林函数满足：
+
+$$
 \alpha \nabla^2 G(\mathbf{r}) - m^2 G(\mathbf{r}) = -\delta(\mathbf{r}).
+$$
+
 其解为：
+
+$$
 G(r) = \frac{1}{4\pi \alpha} \frac{e^{-m r}}{r}.
+$$
+
 因此，点源引起的扰动为 \psi(r) = \kappa M G(r)，即式 (3)。
 
 3.2 牛顿极限
 
 当 m = 0 时，方程退化为泊松方程：
+
+$$
 \alpha \nabla^2 \psi = -\kappa M \delta(\mathbf{r}),
+$$
+
 解为 \psi(r) = \frac{\kappa M}{4\pi \alpha} \frac{1}{r}，对应无质量的引力势。这正是牛顿引力的形式。
 
 3.3 有质量情况
@@ -97,7 +133,11 @@ G(r) = \frac{1}{4\pi \alpha} \frac{e^{-m r}}{r}.
 5.2 数值模拟方程
 
 若直接求解概率强度场 I(\mathbf{r},t) 的动力学方程，可采用有限差分法离散化：
+
+$$
 \frac{\partial I}{\partial t} = \alpha \nabla^2 I + \beta I (1 - I/I_{\text{max}}) - \gamma I.
+$$
+
 点源作为边界条件处理（例如在原点处固定 I = I_s）。在稳态下，可得到 I(r) 的分布。通过调节参数 \beta, I_{\text{max}} 可改变有效质量 m。
 
 5.3 预期结果
