@@ -65,13 +65,18 @@ Structural Entropy E_s Complexity and order of spatial arrangement Weighted wave
 Color Entropy E_c Diversity and harmony of color distribution HSV space joint entropy + color contrast
 Meaning Entropy E_m Coupling of morphological recognizability and semantic ambiguity Object detection count × semantic ambiguity index (requires window calibration)
 Summary Entropy E_{su} Compression rate and abstraction capability for reality Information bottleneck method + cultural representativeness index (requires historical data)
+
+$$
 Ethical Coefficient \lambda_e Degree of conformity to social norms Weighted product of compliance, goodwill, and harmlessness, \lambda_e \in [0,1]; sub-dimension weights defined by the window
+$$
 
 3.2 Window Parameters and Weight Calibration
 
 The window parameter set W includes: cultural background, era characteristics, application context, audience age/education level, etc.
 
+$$
 The base importance \omega_d(W) of each dimension is calibrated through:
+$$
 
 · Expert Scoring: Domain experts rate the importance of dimensions for typical samples.
 · User Surveys: Target populations rank their multi-dimensional preferences for content, allowing reverse fitting of weights.
@@ -79,7 +84,9 @@ The base importance \omega_d(W) of each dimension is calibrated through:
 
 The final weights are:
 
+$$
 w_d(W) = \frac{\omega_d(W)}{\sum_{k} \omega_k(W)}, \quad \sum w_d = 1
+$$
 
 To lower the barrier to entry, we preset several typical window weight templates (e.g., "Art Appreciation," "Advertising Communication," "Educational Evaluation," "Content Moderation") and provide a custom interface.
 
@@ -87,7 +94,9 @@ To lower the barrier to entry, we preset several typical window weight templates
 
 A hierarchical weighted power product is adopted as the engineering approximation:
 
+$$
 P_{\text{inst}} = \lambda_e \cdot E_g^{w_g} \cdot E_s^{w_s} \cdot E_c^{w_c} \cdot E_m^{w_m} \cdot E_{su}^{w_{su}}
+$$
 
 This formula aligns with the intuition that "the overall impact collapses if any dimension collapses," and the adjustable weights allow adaptation to different windows.
 
@@ -95,29 +104,49 @@ This formula aligns with the intuition that "the overall impact collapses if any
 
 The long-term total impact of content is the time integral of instantaneous power, accounting for decay:
 
+$$
 \text{Total Impact} = \int_0^{\infty} P_{\text{inst}}(t) \cdot e^{-k t} \, dt
+$$
 
 The decay rate k is determined by the intrinsic properties of the content:
 
+$$
 k = \alpha \cdot (1 - \bar{E}_{su}) + \beta \cdot (1 - \lambda_e) + \gamma \cdot C
+$$
 
 Where:
 
+$$
 · \bar{E}_{su} is the summary entropy normalized to [0,1];
+$$
+
 · C is the cultural stability factor (reflecting societal acceptance changes for that type of content);
+
+$$
 · \alpha, \beta, \gamma are adjustable coefficients fitted from historical data.
+$$
 
+$$
 For static content, if P_{\text{inst}} is constant, the total impact simplifies to:
+$$
 
+$$
 \text{Total Impact} = \frac{P_{\text{inst}}}{k}
+$$
 
 3.5 Ethical Constraint Mechanism
 
+$$
 The ethical coefficient \lambda_e must be calculated in a window-dependent manner:
+$$
 
+$$
 \lambda_e = \prod_{i} \lambda_i(W), \quad \lambda_i \in [0,1]
+$$
 
+$$
 Where \lambda_i corresponds to different ethical sub-dimensions (e.g., legal compliance, public goodwill, harmlessness). The standards for each sub-dimension are defined by the window W (e.g., the laws of different countries, the moral codes of different cultures). If any \lambda_i = 0, then \lambda_e = 0, and the total impact of the content becomes zero (system automatically blocks it).
+$$
 
 ---
 
@@ -131,7 +160,11 @@ SPCIM does not claim absolute truth but aims to be a tool aligned with human con
 
 1. Construct a Calibration Set: Select 100-200 visual works covering different types, cultures, and eras (e.g., Mona Lisa, A Thousand Li of Rivers and Mountains, advertising posters, news images, short videos).
 2. Obtain Human Ratings: Invite reviewers from diverse backgrounds to score each work on "instantaneous impact," "expected lifespan," and "ethical acceptability."
+
+$$
 3. Parameter Fitting: Optimize the weights w_d, decay coefficients \alpha, \beta, \gamma, and the definition of ethical sub-dimensions, using human ratings as the objective.
+$$
+
 4. Cross-Validation: Test the correlation between the framework's output and human ratings on content not used in calibration; iterate for optimization.
 
 4.3 Preliminary Validation Example
