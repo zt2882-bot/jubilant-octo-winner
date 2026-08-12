@@ -86,7 +86,11 @@ Completion is death. No final state, no encapsulation of thought, no blocking of
 
 NTP models time as an interval with bounded uncertainty, not a point. It does not require timestamps of different nodes to be numerically equal; it only requires:
 [
+
+$$
 \text{Window}_A \cap \text{Window}_B \neq \emptyset
+$$
+
 ]
 If two windows intersect, the system considers their views of “current time” compatible. This is an epistemological minimal consensus: not numerical equality, but non-contradiction.
 
