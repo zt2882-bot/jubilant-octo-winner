@@ -1,6 +1,6 @@
 # 🔮 Jubilant Octo Winner - 项目导航
 
-> 深渊实验室的知识整合与高熵输出平台 | The Abyss Lab's Meta-Knowledge Integration Platform
+> 隙间书斋的知识整合与高熵输出平台 | The Gap Library's Meta-Knowledge Integration Platform
 
 ---
 
@@ -155,7 +155,7 @@
 ### 我对商业应用感兴趣？
 → 阅读顺序：**#1**（SPCIM框架）→ **#9**（商业前景）
 
-### 我是深渊实验室的研究者？
+### 我是隙间书斋的研究者？
 → 建议阅读：**#27**（开窗者手册）+ 全部理论框架
 
 ---
@@ -192,7 +192,7 @@
 | **当前状态** | 🔄 活跃开发中 |
 | **文档语言** | 中文 + English |
 | **最后更新** | 2026-05-18 |
-| **维护者** | @zt2882-bot (深渊实验室) |
+| **维护者** | @zt2882-bot (隙间书斋) |
 
 ---
 
