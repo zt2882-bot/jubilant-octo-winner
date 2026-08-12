@@ -53,9 +53,9 @@ Send valuable papers/data/contacts from your domain. Get confirmation on signatu
 
 The semantic-layer inference engine prototype is verified — CPU-only, 30MB memory, equivalent to Transformer embedding layer — runs on any phone CPU. Now expanding from the semantic layer to the constraint layer.
 
-如果你理解"约束"和"统计相关"是两件不同的事情——来看看 [#70 开放项目](https://github.com/zt2882-bot/jubilant-octo-winner/issues/70)。
+如果你理解"约束"和"统计相关"是两件不同的事情——来看看 [#70 开放项目（中文）](https://github.com/zt2882-bot/jubilant-octo-winner/issues/70)。
 
-If you understand that "constraint" and "statistical correlation" are different things — see [#70 Open Project](https://github.com/zt2882-bot/jubilant-octo-winner/issues/70).
+If you understand that "constraint" and "statistical correlation" are different things — see [#71 Open Project (English)](https://github.com/zt2882-bot/jubilant-octo-winner/issues/71).
 
 不是招聘。不是外包。是给已经看见同一件事的人一个交汇点。
 Not hiring. Not outsourcing. An intersection point for those who have already seen the same thing.
