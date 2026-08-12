@@ -4,7 +4,6 @@
 
 ---
 
-
 I. Potential Application Breadth (The Ceiling)
 
 The framework (SPCIM + Non-Markovian extension) can be applied in the following fields:
