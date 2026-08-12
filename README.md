@@ -10,7 +10,7 @@
 
 ## 中文
 
-> 深渊实验室的知识整合与高熵输出平台
+> 隙间书斋的知识整合与高熵输出平台
 
 **🔍 新手？请先阅读 [完整项目导航 INDEX.md](./INDEX.md) 来理解项目结构！**
 
@@ -76,7 +76,7 @@
 
 - **GitHub**: [@zt2882-bot](https://github.com/zt2882-bot)
 - **角色**: 理论原创 · 数学建模 · 工程化实现
-- **组织**: 深渊实验室（The Abyss Lab）
+- **组织**: 隙间书斋（The Gap Library）
 
 ---
 
@@ -119,7 +119,7 @@
 
 ## English
 
-> The Abyss Lab's Meta-Knowledge Integration Platform
+> The Gap Library's Meta-Knowledge Integration Platform
 
 **🔍 New to this project? Please read [Complete Project Navigation INDEX.md](./INDEX.md) first to understand the project structure!**
 
@@ -184,7 +184,7 @@ For detailed dependency relationships and navigation, please refer to **[Complet
 
 - **GitHub**: [@zt2882-bot](https://github.com/zt2882-bot)
 - **Role**: Theoretical originator · Mathematical modeling · Engineering implementation
-- **Organization**: The Abyss Lab
+- **Organization**: The Gap Library
 
 ---
 
