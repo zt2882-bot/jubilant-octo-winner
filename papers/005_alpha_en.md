@@ -26,11 +26,16 @@ To facilitate subsequent correspondence, this section briefly reviews the core c
 
 2.1 Probability Bubbles and Self-Consistency
 
+$$
 The universe is described as a total probability space \mathcal{U}, with global outer measure P_{\text{total}}(\mathcal{U}) = 0 (global zero measure theorem [3]). Self-consistent probability bubbles \mathcal{B} \subset \mathcal{U} are subsets satisfying causal closure and rule self-consistency, with an internal normalized probability measure P_{\mathcal{B}}(\mathcal{B}) = 1 (local normalization theorem [3]).
+$$
 
 2.2 Dynamical Mechanisms
 
+$$
 · Entropy gradient \nabla S: Determines the direction and boundaries of probability bubble evolution.
+$$
+
 · Single-point phase transition: When local entropy compression exceeds a threshold, a structural seed is triggered.
 · Proliferation: The structural seed influences surrounding probability distributions through nonlinear feedback.
 · Oscillatory convergence: Structures oscillate between proliferation and diffusion, eventually stabilizing.
@@ -51,26 +56,47 @@ This section presents the core framework of the magnetic chip calculator, focusi
 Each magnetic chip is a miniature magnetic particle with the following properties:
 
 Property Symbol Description
+
+$$
 Spatial position \mathbf{r}_i \in \mathbb{R}^3 Continuous spatial coordinates, time-varying
+$$
+
+$$
 Magnetization direction \mathbf{m}_i \in S^2 Unit vector representing magnetization state (can be simplified to binary ±1)
+$$
+
+$$
 State space (\mathbf{r}_i, \mathbf{m}_i) Complete chip state, containing both continuous and discrete degrees of freedom
+$$
+
 Independence - No physical connections between chips; coupling only through magnetic field
 
+$$
 Theoretical correspondence: Each magnetic chip = one self-consistent probability bubble. Spatial position \mathbf{r}_i corresponds to the bubble's "position" in total probability space; magnetization direction \mathbf{m}_i corresponds to the bubble's internal probability distribution state.
+$$
 
 3.2 Global Magnetic Field: Physical Realization of the Total Probability Field
 
 The magnetization of all chips collectively contributes to a spatially distributed global magnetic field:
 
+$$
 \mathbf{B}(\mathbf{r}) = \sum_{i=1}^N \mathbf{B}_i(\mathbf{r} - \mathbf{r}_i, \mathbf{m}_i)
+$$
 
+$$
 where \mathbf{B}_i is the field contributed by the i-th chip, decaying with distance (e.g., dipole field). The global magnetic field has the following properties:
+$$
 
 · Instantaneity: The magnetic field propagates at the speed of light, effectively instantaneous at system scales, achieving global instantaneous coupling.
 · Self-consistency: Each chip experiences the superposition of fields from all chips, while its own contribution simultaneously affects the global field, forming a recursive self-consistent relationship.
-· Information carrier: The global magnetic field \mathbf{B}(\mathbf{r}) is a continuous field whose spatial distribution and temporal evolution carry the collective information of all chips.
 
+$$
+· Information carrier: The global magnetic field \mathbf{B}(\mathbf{r}) is a continuous field whose spatial distribution and temporal evolution carry the collective information of all chips.
+$$
+
+$$
 Theoretical correspondence: Global magnetic field = total probability field P_{\text{total}}. Evolution of the magnetic field distribution corresponds to evolution of the total probability field; interaction between chips and field corresponds to coupling between local probability bubbles and the total probability field.
+$$
 
 3.3 Evolution Rules: Physical Laws as Computation
 
@@ -80,7 +106,9 @@ The system evolves under natural physical laws without external program interven
 
 Chips move under magnetic field gradient forces:
 
+$$
 \mathbf{F}_i = \nabla (\mathbf{m}_i \cdot \mathbf{B}(\mathbf{r}_i))
+$$
 
 Motion tends toward energy minimization: chips prefer to move toward regions of stronger magnetic field and align with the field direction. This corresponds to probability flow driven by entropy gradients in probability bubble theory.
 
@@ -88,7 +116,9 @@ Motion tends toward energy minimization: chips prefer to move toward regions of 
 
 When local magnetic field or thermal fluctuations exceed a threshold, a chip's magnetization direction may flip:
 
+$$
 P_{\text{flip}} = f(|\mathbf{B}_{\text{local}}|, T, \text{material parameters})
+$$
 
 where T is temperature, controlling thermal fluctuation intensity. The flipping process corresponds to a single-point phase transition in probability bubble theory.
 
@@ -96,7 +126,9 @@ where T is temperature, controlling thermal fluctuation intensity. The flipping 
 
 Any chip motion or flipping instantaneously changes the global magnetic field, thereby affecting all other chips. The system forms closed-loop dynamics:
 
+$$
 \{\mathbf{r}_i, \mathbf{m}_i\} \xrightarrow{\text{update}} \mathbf{B}(\mathbf{r}) \xrightarrow{\text{feedback}} \{\mathbf{r}_i, \mathbf{m}_i\}
+$$
 
 3.3.4 Boundary Conditions
 
@@ -106,7 +138,9 @@ Computational region boundaries can be defined as:
 · Reflecting boundaries: Chips bounce back (corresponding to bubble boundary reflection)
 · Periodic boundaries: System forms toroidal topology
 
+$$
 Boundary conditions correspond to \nabla S = 0 (zero entropy gradient boundaries) in probability bubble theory.
+$$
 
 3.4 Computational Process: From Evolution to Results
 
@@ -122,16 +156,39 @@ Computation is not performed through instructions but through physical evolution
 4 Rigorous Correspondence with the Probabilistic Bubble Universe
 
 Magnetic Chip Calculator Probabilistic Bubble Universe Correspondence
+
+$$
 Individual magnetic chip Self-consistent bubble \mathcal{B} Each chip is a locally self-consistent probability space
+$$
+
+$$
 Chip position \mathbf{r}_i Bubble position in total probability space Position change represents probability flow
+$$
+
+$$
 Magnetization direction \mathbf{m}_i Bubble's internal probability distribution state Flipping represents phase transition
+$$
+
+$$
 Global magnetic field \mathbf{B}(\mathbf{r}) Total probability field P_{\text{total}} Field self-consistency constrains global evolution
+$$
+
+$$
 Magnetic field gradient force Entropy gradient \nabla S Drives direction of probability bubble motion
+$$
+
+$$
 Magnetization flip threshold Phase transition condition P_s > P_{\text{th}} Local state reaches critical point
+$$
+
 Inter-chip coupling Attractor network Full connectivity through global field
 Thermal fluctuations Entropy diffusion Screens structures, smooths unstable states
 Stable state (energy minimum) Attractor Predictable system convergence state
+
+$$
 Boundary conditions Bubble boundary \nabla S = 0 Structure termination condition
+$$
+
 Initialization/readout Observer window External intervention operations
 
 This correspondence demonstrates that the magnetic chip calculator is not merely a physical instance of probability bubble theory but arguably its most direct experimental validation platform.
@@ -154,11 +211,21 @@ Energy consumption High (charge搬运) Low (field maintenance only, motion nearl
 
 5.2 Equivalent Computational Power Estimation
 
+$$
 Assume N = 1024 chips and clock frequency f = 1\ \text{GHz} (external driving field update rate; chip motion can complete within nanoseconds):
+$$
 
+$$
 · Effective state space: Each chip has 2D position (assuming 2^{10} precision) and magnetization (1 bit), total information \approx 1024 \times (20 + 1) = 21504 bits, instantaneous state space reaching 2^{21504}.
+$$
+
+$$
 · Equivalent connections: Global magnetic field enables full connectivity, effective connections \approx N^2 = 10^6.
+$$
+
+$$
 · Equivalent connection update rate: All connections update simultaneously every nanosecond, achieving 10^9 \times 10^6 = 10^{15} connection updates per second.
+$$
 
 This figure already exceeds the peak computational power of current top-tier GPUs (approximately 10^{13} FLOPS). More importantly, for fully connected optimization problems, traditional computers must simulate all connections, whereas the magnetic chip calculator performs physical real-time evolution, requiring no "simulation."
 
