@@ -43,15 +43,15 @@ $\mathcal{U}$为无限维拓扑可测空间，无预设的物理规则、时空�
  
 定义2 全域外测度：记为P_{total}，是定义在全态宇宙空间$\mathcal{U}$的幂集上的普通测度（非概率测度），满足测度论的基本公理：
  
-1. 非负性：对任意可测子集A $subseteq$ $\mathcal{U}$，有P_{total}(A) $geq$ 0；
+1. 非负性：对任意可测子集A $\subseteq$ $\mathcal{U}$，有P_{total}(A) $\geq$ 0；
 2. 空集零测性：P_{total}(\emptyset) = 0；
-3. 可数可加性：对任意可数个互不相交的可测子集\{A_i\}_{i=1}^$infty$，有P_{total}(\bigcup_{i=1}^$infty$ A_i) = $sum$_{i=1}^$infty$ P_{total}(A_i)。
+3. 可数可加性：对任意可数个互不相交的可测子集\{A_i\}_{i=1}^$\infty$，有P_{total}(\bigcup_{i=1}^$\infty$ A_i) = $\sum$_{i=1}^$\infty$ P_{total}(A_i)。
  
 全域外测度的核心属性是：它是站在全态宇宙之外的“上帝视角”定义的测度，不受概率公理中“全空间测度为1”的约束，其物理意义是对全态空间中不同状态集合的“全域权重”的度量。
  
 2.3 自洽概率泡的严格定义
  
-定义3 自洽概率泡：称可测子集$\mathcal{B}$ $subseteq$ $\mathcal{U}$为一个自洽概率泡，当且仅当它满足以下两个核心条件：
+定义3 自洽概率泡：称可测子集$\mathcal{B}$ $\subseteq$ $\mathcal{U}$为一个自洽概率泡，当且仅当它满足以下两个核心条件：
  
 1. 规则自洽与因果闭合性：$\mathcal{B}$内的所有状态、演化路径与可观测事件，均遵循一套闭合、无矛盾、可复现的内禀规则（如物理定律、因果律、逻辑规则）。该规则可完整定义$\mathcal{B}$内的状态演化与事件关联，不会产生逻辑悖论，且与$\mathcal{U}$ \setminus $\mathcal{B}$中的状态不存在不可控的因果耦合。
 2. 可测性与支撑完备性：$\mathcal{B}$上可定义一个σ代数$\mathcal{F}$_$\mathcal{B}$（即$\mathcal{B}$内所有可观测事件的集合），且存在一个以$\mathcal{B}$为支撑的测度P_$\mathcal{B}$，即对任意A \cap $\mathcal{B}$ = \emptyset，有P_$\mathcal{B}$(A) = 0。
@@ -60,9 +60,9 @@ $\mathcal{U}$为无限维拓扑可测空间，无预设的物理规则、时空�
  
 定义4 泡内内禀概率测度：对自洽概率泡$\mathcal{B}$，其内禀概率测度P_$\mathcal{B}$是定义在可测空间($\mathcal{B}$, $\mathcal{F}$_$\mathcal{B}$)上的概率测度，满足柯尔莫哥洛夫公理化概率论的全部公理：
  
-1. 非负性：对任意事件A \in $\mathcal{F}$_$\mathcal{B}$，有P_$\mathcal{B}$(A) $geq$ 0；
+1. 非负性：对任意事件A \in $\mathcal{F}$_$\mathcal{B}$，有P_$\mathcal{B}$(A) $\geq$ 0；
 2. 归一性：P_$\mathcal{B}$($\mathcal{B}$) = 1；
-3. 可数可加性：对任意可数个互不相交的事件\{A_i\}_{i=1}^$infty$ $subseteq$ $\mathcal{F}$_$\mathcal{B}$，有P_$\mathcal{B}$(\bigcup_{i=1}^$infty$ A_i) = $sum$_{i=1}^$infty$ P_$\mathcal{B}$(A_i)。
+3. 可数可加性：对任意可数个互不相交的事件\{A_i\}_{i=1}^$\infty$ $\subseteq$ $\mathcal{F}$_$\mathcal{B}$，有P_$\mathcal{B}$(\bigcup_{i=1}^$\infty$ A_i) = $\sum$_{i=1}^$\infty$ P_$\mathcal{B}$(A_i)。
  
 该测度是站在泡内的“观测者视角”定义的，仅对泡内的事件有效，其物理意义是泡内事件的相对发生概率。
  
@@ -119,7 +119,7 @@ $$
  
 维度2：自洽性与闭合性的必然结果
  
-自洽概率泡的因果闭合性，决定了泡内的所有演化与观测，都只能在$\mathcal{B}$内部完成，与泡外的状态无因果耦合。这意味着，泡内的所有概率判断，本质上都是条件概率P($cdot$ | $\mathcal{B}$)，即“在自洽泡$\mathcal{B}$存在、其内禀规则成立的前提下，事件发生的概率”。
+自洽概率泡的因果闭合性，决定了泡内的所有演化与观测，都只能在$\mathcal{B}$内部完成，与泡外的状态无因果耦合。这意味着，泡内的所有概率判断，本质上都是条件概率P($\cdot$ | $\mathcal{B}$)，即“在自洽泡$\mathcal{B}$存在、其内禀规则成立的前提下，事件发生的概率”。
  
 根据条件概率的标准定义：
 
@@ -141,7 +141,7 @@ $$
  
 基于上述两个定理，我们可以直接得到两个关键推论，进一步完善模型的逻辑闭环。
  
-推论1（零测泡的存在性） 所有自洽概率泡$\mathcal{B}$，均为全态宇宙空间$\mathcal{U}$中的非空零测集，即满足P_{total}($\mathcal{B}$) = 0且$\mathcal{B}$ $neq$ \emptyset。
+推论1（零测泡的存在性） 所有自洽概率泡$\mathcal{B}$，均为全态宇宙空间$\mathcal{U}$中的非空零测集，即满足P_{total}($\mathcal{B}$) = 0且$\mathcal{B}$ $\neq$ \emptyset。
  
 该推论直接解释了“概率为0但可能发生”的经典矛盾：自洽泡在全域视角下测度为0，但它本身是非空的、包含可实现状态的集合，其内部的事件完全可能发生，与空集对应的不可能事件有本质区别。
  
