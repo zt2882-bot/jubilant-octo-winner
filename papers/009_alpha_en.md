@@ -44,16 +44,28 @@ The only ontological presupposition of this framework is the existence of the gl
  
 2.1 Global Probability Space
  
+
+$$
 Define the underlying ontology of the universe as the global probability space (\Omega, P), where:
+$$
+
  
+
+$$
 - \Omega is the full probability space, containing all possible states and possibilities of the universe, without boundaries or a priori dimensional constraints;
+$$
+
 - P is the global probability measure, which defines the distribution rule of possibilities in the full space.
  
 The global probability space does not depend on any external carrier; it is the possibility itself, corresponding to the "origin of emptiness with all possibilities and no fixed inherent nature" in Eastern philosophy.
  
 2.2 Probability Bubble
  
+
+$$
 Define a probability bubble as a locally self-consistent subspace \Omega_i \subset \Omega in the global probability space, which has an independent local probability distribution P_i and is the basic unit of structure in this framework.
+$$
+
  
 - A probability bubble is an aggregate of local probability distributions, not an entity;
 - Its local self-consistency is reflected in the fact that the evolution of the internal probability distribution follows a unified endogenous rule;
@@ -61,10 +73,16 @@ Define a probability bubble as a locally self-consistent subspace \Omega_i \subs
  
 2.3 Local Entropy
  
+
+$$
 For any probability bubble \Omega_i, define its local entropy as Shannon entropy:
+$$
+
  
 
+$$
 S_i = -\sum_{\omega \in \Omega_i} P_i(\omega) \log P_i(\omega)
+$$
 
  
 In this framework, entropy is the only universal measure describing the state of the probability distribution, and its core physical meanings are:
@@ -88,46 +106,79 @@ This chapter fully describes the whole life cycle of a probability bubble "from 
  
 3.1 Single-Point Phase Transition: Trigger Condition of Structure
  
+
+$$
 In the global probability field, when any point \omega^* experiences significant local entropy compression while the entropy diffusion level of the surrounding environment is sufficiently low, a single-point phase transition of structure generation will be triggered.
+$$
+
  
 Define the phase transition probability as:
  
 
+$$
 P_s = f(\Delta S_{\text{local}}, \Delta S_{\text{global}})
+$$
 
  
 Where:
  
+
+$$
 - \Delta S_{\text{local}} is the local entropy change at this point (entropy compression is negative, the higher the compression degree, the larger the absolute value);
+$$
+
+$$
 - \Delta S_{\text{global}} is the entropy change of the surrounding environment (entropy diffusion is positive, the weaker the diffusion, the smaller the value);
+$$
+
 - f is a monotonically increasing function (such as the logistic function). The stronger the local entropy compression and the weaker the environmental entropy diffusion, the higher the phase transition probability.
  
+
+$$
 When the phase transition probability P_s exceeds the critical threshold P_{\text{th}}, this point becomes a "structural seed", officially starting the phase transition process from possibility to entity structure. This process is completely endogenous, without external intervention or first cause, which resolves the millennial puzzle of the "first mover" in traditional cosmology.
+$$
+
  
 3.2 Proliferation and Oscillatory Convergence: Growth and Stabilization of Structure
  
 The structural seed triggers the directional proliferation of the surrounding probability distribution through nonlinear feedback, completing the expansion and solidification of the structure. Define the existence probability of the seed bubble as P_s(t), and its evolution follows the dynamic equation:
  
 
+$$
 \frac{dP_s}{dt} = \omega (P_{\text{max}} - P_s) - \gamma P_s
+$$
 
  
 Where:
  
+
+$$
 - \omega is the proliferation rate, representing the aggregation ability of local entropy compression to the surrounding probability;
+$$
+
+$$
 - \gamma is the damping coefficient, from the dissipation effect of environmental entropy diffusion on the structure;
+$$
+
+$$
 - P_{\text{max}} is the maximum probability intensity that the local environment can carry, determined by the global constraints of the parent bubble and the environmental entropy state.
+$$
+
  
 The discrete form of the equation is:
  
 
+$$
 P_s^{(t+1)} = P_s^{(t)} + \Delta t \left[ \omega (P_{\text{max}} - P_s^{(t)}) - \gamma P_s^{(t)} \right]
+$$
 
  
 The system will eventually oscillate and converge to a stable equilibrium state:
  
 
+$$
 P_s^* = \frac{\omega P_{\text{max}}}{\omega + \gamma}
+$$
 
  
 This stable value P_s^* is the stable probability intensity after the structure is solidified, corresponding to the essence of the "stable entity" we observe—it is not absolute certainty, but a stable emergent state after the convergence of the probability distribution.
@@ -137,7 +188,9 @@ This stable value P_s^* is the stable probability intensity after the structure 
 In traditional physics, the boundary of a structure is determined by artificial definition or material distribution; in this framework, the boundary of a probability bubble is completely endogenous, strictly defined by the vanishing of the entropy gradient:
  
 
+$$
 \nabla S = 0
+$$
 
  
 The probability bubble will spontaneously expand along the direction of the entropy gradient until the local entropy reaches equilibrium with the environmental entropy (the entropy gradient is zero), naturally forming the boundary of the structure. This mechanism ensures that the boundary of the structure is completely determined by the evolution of the system itself, without any external scale, which is the core embodiment of self-consistency.
@@ -154,7 +207,11 @@ In the global probability field, a large number of new probability bubbles are t
  
 Only probability bubbles that meet the following two conditions can survive:
  
+
+$$
 1. The phase transition probability exceeds the critical threshold P_s > P_{\text{th}}, forming a stable structural seed;
+$$
+
 2. It can continuously maintain local entropy compression to resist the dissipation effect of environmental entropy diffusion.
  
 This is a completely endogenous natural selection mechanism: without external design, the evolution rules of entropy automatically screen out structures that can survive stably and eliminate transient fluctuations.
@@ -163,7 +220,11 @@ This is a completely endogenous natural selection mechanism: without external de
  
 The surviving stable probability bubbles will form a coupling relationship through the exchange of probability flow and information flow, and finally build a global attractor coupling network.
  
+
+$$
 - Define the coupling matrix \mathbf{C} = [c_{ij}], where c_{ij} \in [0,1] represents the coupling strength between the i-th and j-th probability bubbles, 1 is fully coupled, and 0 is completely decoupled;
+$$
+
 - The connectivity of the network, the number of closed loops and the distribution of coupling strength determine the global stability of the whole system;
 - The stable multi-bubble coupling structure will form an attractor of the dynamic system: after the system is disturbed by the outside, it will spontaneously return to the stable state, which further improves the anti-interference ability and sustainability of the structure.
  
@@ -231,7 +292,11 @@ The core logic of this framework is completely isomorphic with the ultimate mean
  
 This framework has built a set of underlying cognitive system and dynamic rules, but there is still a lot of room for deepening, verification and expansion, which will be completed by subsequent explorers. The core research directions include:
  
+
+$$
 1. Concretization of Core Functions and Parameters: Clarify the specific form of the phase transition probability function f, define the quantitative meaning of core parameters such as proliferation rate \omega and damping coefficient \gamma, and establish a strict mapping relationship between parameters and system characteristics;
+$$
+
 2. Mapping of Observable Physical Quantities: Construct an accurate mapping between the dynamic parameters of probability bubbles and observable physical quantities in existing physics (spacetime curvature, particle mass, interaction strength, cosmological parameters, etc.), and complete the restoration from the underlying framework to observable phenomena;
 3. Numerical Simulation and Verification: Develop a numerical simulation system based on the dynamic rules of this framework, reproduce the whole process from microscopic fluctuations to structure formation and network evolution, and verify the self-consistency, stability and evolution characteristics of the framework;
 4. Derivation of Falsifiable Predictions: Starting from this framework, derive falsifiable predictions that are different from the existing mainstream physical theories and cosmological models, which can be verified by astronomical observations or physical experiments, and complete the scientific test of the theory;
