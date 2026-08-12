@@ -3,7 +3,6 @@
 **γ·时间事实** | EN
 
 ---
-
 # Time and Fact: The Emergent Foundation of “Fact” in Distributed Systems from the Perspective of NTP
 
 ## —— On Mills’ Design Philosophy and the Ten Laws of Fact Systems
@@ -50,34 +49,34 @@ The clock discipline algorithm (Section 5) strictly limits the rate of time adju
 
 Based on Mills’ design ideas, we abstract the essence of NTP Sections 2–5 and its appendices into a set of **design principles for fact systems**, called the “Ten Laws of Fact Systems”. These laws are not limited to time synchronization but are applicable to any distributed system that needs “facts to emerge”.
 
-**Law 1 – Fact Is an Interval, Not a Point**  
+**Law 1 – Fact Is an Interval, Not a Point**
 Every fact must carry uncertainty. A claim without error is not credible. Point values are for presentation, not decision.
 
-**Law 2 – Facts Can Only Be Falsified, Never Proven**  
+**Law 2 – Facts Can Only Be Falsified, Never Proven**
 The system’s job is not to find truth, but to eliminate impossibility. Use intersection, not averaging. Retain multiple worlds. Error is not the enemy; stable error is.
 
-**Law 3 – Facts Must Allow Parallel Worlds**  
+**Law 3 – Facts Must Allow Parallel Worlds**
 Multiple contradictory factual claims coexisting is a healthy state. Conflict ≠ failure, agreement ≠ correctness. A system without divergence is lying.
 
-**Law 4 – A Fact System Must Be Slower Than Noise**  
+**Law 4 – A Fact System Must Be Slower Than Noise**
 Response speed must not exceed the rate of world change. Low-bandwidth feedback, history weighting over immediacy, stability over precision. Speed is the signature of illusion engineering.
 
-**Law 5 – Facts Must Be Exposed Through Long-Term Behavior**  
+**Law 5 – Facts Must Be Exposed Through Long-Term Behavior**
 A single correct instance means nothing. Credibility comes from temporal dimension; nodes are selected by history. All trust decays. No permanent trust.
 
-**Law 6 – A Fact System Must Oppose Structural Symmetry**  
+**Law 6 – A Fact System Must Oppose Structural Symmetry**
 Perfectly symmetric systems inevitably resonate. Deliberately create asymmetric roles, different rhythms, and diverse perspectives. Irregularity is a safety feature.
 
-**Law 7 – A Fact System Cannot Possess Authoritative Nodes**  
+**Law 7 – A Fact System Cannot Possess Authoritative Nodes**
 Authority is the enemy of fact. There is no final arbiter, no irreplaceable node. Hierarchy is only a reference, not a command. Authority kills fact.
 
-**Law 8 – A Fact System Must Be Auditable by Bystanders**  
+**Law 8 – A Fact System Must Be Auditable by Bystanders**
 Opacity is untrustworthy. Expose “why we believe” rather than “what we believe”. Management interfaces are observation interfaces. Trust comes from observability, not declarations.
 
-**Law 9 – A Fact System Must Have the Right to Refuse and to Crash**  
+**Law 9 – A Fact System Must Have the Right to Refuse and to Crash**
 Refusing to act is more important than acting wrongly. KoD (refuse to answer), Panic (admit failure), stop pretending to be correct. Self-doubt is an advanced capability.
 
-**Law 10 – A Fact System Must Leave Room for the Future**  
+**Law 10 – A Fact System Must Leave Room for the Future**
 Completion is death. No final state, no encapsulation of thought, no blocking of evolutionary paths. The system’s mission is to “continue to exist”, not “prove itself”.
 
 ## 4. The Epistemological Foundation of NTP: Time as an Event Window
@@ -161,12 +160,12 @@ In an era of exploding system scale and autonomous AI agents, people will have t
 
 ## References
 
-[1] Mills, D. L. (2010). *RFC 5905: Network Time Protocol Version 4: Protocol and Algorithms Specification*.  
-[2] Mills, D. L. (1991). *Internet Time Synchronization: The Network Time Protocol*.  
-[3] Mills, D. L. (2011). *Computer Network Time Synchronization: The Network Time Protocol on Earth and in Space*.  
-[4] Popper, K. (1934). *The Logic of Scientific Discovery*.  
-[5] Lamport, L. (1978). Time, clocks, and the ordering of events in a distributed system. *Communications of the ACM*, 21(7), 558–565.  
-[6] Corbett, J. C., et al. (2012). Spanner: Google’s globally-distributed database. *OSDI*.  
+[1] Mills, D. L. (2010). *RFC 5905: Network Time Protocol Version 4: Protocol and Algorithms Specification*.
+[2] Mills, D. L. (1991). *Internet Time Synchronization: The Network Time Protocol*.
+[3] Mills, D. L. (2011). *Computer Network Time Synchronization: The Network Time Protocol on Earth and in Space*.
+[4] Popper, K. (1934). *The Logic of Scientific Discovery*.
+[5] Lamport, L. (1978). Time, clocks, and the ordering of events in a distributed system. *Communications of the ACM*, 21(7), 558–565.
+[6] Corbett, J. C., et al. (2012). Spanner: Google’s globally-distributed database. *OSDI*.
 [7] Ten Laws of Fact Systems (abstracted from RFC 5905 Sections 2–5 and appendices).
 
 ---
