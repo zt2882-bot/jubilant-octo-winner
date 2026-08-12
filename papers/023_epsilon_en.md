@@ -3,7 +3,6 @@
 **ε·跨域同构** | EN
 
 ---
-
 6. Non-Markovian Extension: The Ramanujan Mathematical Framework (Exploratory)
 
 The core SPCIM model described in Sections 3–5 assumes that the influence of a visual work can be adequately captured by a static, dimension-wise product of entropies, with time integration accounting for decay. However, real-world information systems often exhibit non-Markovian behavior: future impact depends not only on the current state but also on the entire history of how the content has been perceived, shared, and reinterpreted. This historical dependence, along with deep cross-dimensional coupling, suggests the possible need for a more sophisticated mathematical foundation.
