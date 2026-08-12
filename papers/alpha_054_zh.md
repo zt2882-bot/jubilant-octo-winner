@@ -62,7 +62,9 @@
 
 所有磁筹的磁化共同贡献一个空间分布的全局磁场：
 
+$$
 \mathbf{B}(\mathbf{r}) = \sum_{i=1}^N \mathbf{B}_i(\mathbf{r} - \mathbf{r}_i, \mathbf{m}_i)
+$$
 
 其中 \mathbf{B}_i 是第 i 个磁筹贡献的磁场，随距离衰减（如偶极场）。全局磁场具有以下性质：
 
@@ -80,7 +82,9 @@
 
 磁筹在磁场梯度力作用下运动：
 
+$$
 \mathbf{F}_i = \nabla (\mathbf{m}_i \cdot \mathbf{B}(\mathbf{r}_i))
+$$
 
 运动趋向于能量最小化：磁筹倾向于移动到磁场较强的区域，并与磁场方向对齐。这对应于概率泡在熵梯度驱动下的概率流。
 
