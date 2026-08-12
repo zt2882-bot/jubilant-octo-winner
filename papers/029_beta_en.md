@@ -3,7 +3,6 @@
 **β·复眼收敛** | EN
 
 ---
-
 # Compound Eye Convergence: Multi-Perspective Partial Observation & Collaborative Convergence
 
 ## Abstract
@@ -19,10 +18,10 @@ Individual A: sees projection of constraint signature α in physics domain
 Individual B: sees projection of constraint signature α in linguistics domain
 Individual C: sees projection of constraint signature α in cryptography domain
 
-         ↓ collaborative convergence ↓
+↓ collaborative convergence ↓
 
-      Panoramic structure of constraint signature α
-        (no single person sees it alone)
+Panoramic structure of constraint signature α
+(no single person sees it alone)
 ```
 
 This is not "cooperation" — traditional cooperation is division of labor. Compound eye convergence is **simultaneous multi-perspective** — multiple individuals simultaneously observing the projection of the same constraint structure across different domains, their neural ganglia automatically integrating the panorama.
@@ -47,8 +46,6 @@ A compound-eye AI system requires: **multiple small, domain-specific constraint-
 2. How do we verify that two different individuals have "seen" the same thing on the same constraint signature? What is the verification criterion?
 3. How small can a minimal collaborative system be (how many ommatidia, how narrow the visual field) while still producing a panorama?
 
-
-
 ---
 
-*Gap Library · Public Domain · constraint.seen@proton.me*
+*隙间书斋 · 公共领域 · constraint.seen@proton.me*
