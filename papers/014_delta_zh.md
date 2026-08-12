@@ -22,7 +22,7 @@
 
 2 概率强度的定义
 
-设有一个局部自洽概率泡 \mathcal{B}，其状态由空间位置 \mathbf{r} 和内部概率分布 P_{\mathcal{B}} 描述。定义概率强度 I(\mathcal{B}) 为以下五个维度的综合度量：
+设有一个局部自洽概率泡 $\mathcal{B}$，其状态由空间位置 $\mathbf{r}$ 和内部概率分布 P_{$\mathcal{B}$} 描述。定义概率强度 I($\mathcal{B}$) 为以下五个维度的综合度量：
 
 2.1 局部概率值
 
@@ -30,7 +30,7 @@ $$
 P_s = f(\Delta S_{\text{local}}, \Delta S_{\text{global}})
 $$
 
-其中 f 是相变触发函数，\Delta S_{\text{local}} 为局部熵变化，\Delta S_{\text{global}} 为环境熵变化。
+其中 f 是相变触发函数，$\Delta$ S_{$\text{local}$} 为局部熵变化，$\Delta$ S_{$\text{global}$} 为环境熵变化。
 
 2.2 熵密度
 
@@ -46,7 +46,7 @@ $$
 C_{\text{self}} = \frac{1}{1 + \text{Contradiction}(\mathcal{B})}
 $$
 
-其中 \text{Contradiction}(\mathcal{B}) 度量泡内规则的逻辑矛盾程度。完全自洽时 C_{\text{self}} = 1。
+其中 $\text{Contradiction}$($\mathcal{B}$) 度量泡内规则的逻辑矛盾程度。完全自洽时 C_{$\text{self}$} = 1。
 
 2.4 耦合强度
 
@@ -54,7 +54,7 @@ $$
 J = \int_{\mathcal{B}} \mathbf{m} \cdot \mathbf{B} \, dV
 $$
 
-在磁筹系统中，这是磁化方向 \mathbf{m} 与全局磁场 \mathbf{B} 的相互作用能量。在一般系统中，可推广为结构与其环境的耦合程度。
+在磁筹系统中，这是磁化方向 $\mathbf{m}$ 与全局磁场 $\mathbf{B}$ 的相互作用能量。在一般系统中，可推广为结构与其环境的耦合程度。
 
 2.5 历史累积
 
@@ -72,7 +72,7 @@ $$
 I(\mathcal{B}) = P_s \cdot \rho_S \cdot C_{\text{self}} \cdot e^{\beta J} \cdot e^{\gamma H}
 $$
 
-其中 \beta, \gamma 为耦合系数，反映不同维度对结构稳定性的贡献权重。该形式确保：任何一个维度趋近于零，都会导致整体强度急剧下降。
+其中 $\beta$, $\gamma$ 为耦合系数，反映不同维度对结构稳定性的贡献权重。该形式确保：任何一个维度趋近于零，都会导致整体强度急剧下降。
 
 ---
 
@@ -80,7 +80,7 @@ $$
 
 3.1 临界阈值
 
-存在一个临界强度 I_{\text{crit}}，当 I > I_{\text{crit}} 时，结构进入吸引子盆地。此时，系统的演化由吸引子主导，随机扰动被压制。
+存在一个临界强度 I_{$\text{crit}$}，当 I > I_{$\text{crit}$} 时，结构进入吸引子盆地。此时，系统的演化由吸引子主导，随机扰动被压制。
 
 3.2 内在梯度
 
@@ -94,7 +94,7 @@ $$
 
 3.3 外部干涉强度
 
-定义外部干涉项 \mathcal{E}_{\text{ext}}，包括：
+定义外部干涉项 $\mathcal{E}$_{$\text{ext}$}，包括：
 
 · 环境噪声
 · 外部场的扰动
@@ -104,7 +104,7 @@ $$
 
 概率动力学第一定理（概率必然判据）：
 
-\boxed{\nabla I_{\text{intrinsic}} > \|\mathcal{E}_{\text{ext}}\| \quad \text{且} \quad I > I_{\text{crit}}}
+\boxed{$\nabla$ I_{$\text{intrinsic}$} > \|$\mathcal{E}$_{$\text{ext}$}\| \quad $\text{且}$ \quad I > I_{$\text{crit}$}}
 
 当且仅当这两个条件同时满足时，结构的未来演化路径是概率必然的——即系统必然收敛到其吸引子，后续历史只是过程的展开。
 
@@ -116,7 +116,7 @@ $$
 
 4.1 概率场的演化
 
-设整个概率场为 \mathcal{P}(\mathbf{r}, t)，其演化由以下非线性偏微分方程描述：
+设整个概率场为 $\mathcal{P}$($\mathbf{r}$, t)，其演化由以下非线性偏微分方程描述：
 
 $$
 \frac{\partial \mathcal{P}}{\partial t} = \nabla \cdot \left( D \nabla \frac{\delta \mathcal{S}}{\delta \mathcal{P}} \right) + \mathcal{F}(I) \cdot \mathcal{P} + \mathcal{E}_{\text{ext}}(\mathbf{r}, t)
@@ -125,7 +125,7 @@ $$
 其中：
 
 · 第一项是熵扩散，由熵的变分导数驱动
-· 第二项是非线性反馈项，\mathcal{F}(I) 是依赖于概率强度的增殖函数
+· 第二项是非线性反馈项，$\mathcal{F}$(I) 是依赖于概率强度的增殖函数
 · 第三项是外部干涉
 
 4.2 概率强度的演化
@@ -138,10 +138,10 @@ $$
 
 其中：
 
-· \alpha \nabla^2 I 为空间扩散
-· \beta I (1 - I/I_{\text{max}}) 为逻辑斯蒂增长（自增强）
-· -\gamma I 为衰减（熵扩散消耗）
-· \eta(t) 为随机噪声
+· $\alpha$ $\nabla$^2 I 为空间扩散
+· $\beta$ I (1 - I/I_{$\text{max}$}) 为逻辑斯蒂增长（自增强）
+· -$\gamma$ I 为衰减（熵扩散消耗）
+· $\eta$(t) 为随机噪声
 
 4.3 相变触发条件
 
@@ -151,13 +151,13 @@ $$
 P_{\text{trigger}} = \Theta(|\nabla I| - I_{\text{th}})
 $$
 
-其中 \Theta 为阶跃函数，I_{\text{th}} 为临界强度梯度。
+其中 $\Theta$ 为阶跃函数，I_{$\text{th}$} 为临界强度梯度。
 
 4.4 吸引子锁定
 
-当 I > I_{\text{crit}} 且 \nabla I_{\text{intrinsic}} > \|\mathcal{E}_{\text{ext}}\| 时，方程中的非线性项主导，随机项可视为微扰。系统进入吸引子盆地，演化由确定性方程主导：
+当 I > I_{$\text{crit}$} 且 $\nabla$ I_{$\text{intrinsic}$} > \|$\mathcal{E}$_{$\text{ext}$}\| 时，方程中的非线性项主导，随机项可视为微扰。系统进入吸引子盆地，演化由确定性方程主导：
 
-\frac{\partial \mathcal{P}}{\partial t} \approx \mathcal{F}(I) \cdot \mathcal{P} + \text{小扰动}
+\frac{$\partial$ $\mathcal{P}$}{$\partial$ t} $\approx$ $\mathcal{F}$(I) $\cdot$ $\mathcal{P}$ + $\text{小扰动}$
 
 ---
 
