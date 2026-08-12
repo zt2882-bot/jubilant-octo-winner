@@ -33,37 +33,84 @@ All derivations in this paper are based on the standard mathematical axiom syste
  
 2.1 Definition of Total-State Universe Space
  
+
+$$
 Definition 1 (Total-State Universe Space): Denoted as \mathcal{U}, it is the complete set containing all conceivable cosmic states, whose elements cover:
+$$
+
  
 1. All cosmic states satisfying causal closure, rule self-consistency, and definable evolution (i.e., elements of the "self-consistent probability bubble" defined later);
 2. All non-causal chaotic states that do not satisfy self-consistency, have no stable rules, and have logical paradoxes.
  
+
+$$
 \mathcal{U} is an infinite-dimensional topological measurable space, without preset physical rules, spacetime dimensions, or causal constraints, and is the largest set of all possibilities.
+$$
+
  
 2.2 Definition of Global Outer Measure
  
+
+$$
 Definition 2 (Global Outer Measure): Denoted as P_{total}, it is a general measure (non-probability measure) defined on the power set of the total-state universe space \mathcal{U}, satisfying the basic axioms of measure theory:
+$$
+
  
+
+$$
 1. Non-negativity: For any measurable subset A \subseteq \mathcal{U}, P_{total}(A) \geq 0;
+$$
+
+$$
 2. Null measure of empty set: P_{total}(\emptyset) = 0;
+$$
+
+$$
 3. Countable additivity: For any countable family of pairwise disjoint measurable subsets \{A_i\}_{i=1}^\infty, P_{total}(\bigcup_{i=1}^\infty A_i) = \sum_{i=1}^\infty P_{total}(A_i).
+$$
+
  
 The core attribute of the global outer measure is that it is a measure defined from the "God's eye view" outside the total-state universe, not constrained by the "total measure of 1" in probability axioms. Its physical meaning is the measurement of the "global weight" of different state sets in the total-state space.
  
 2.3 Strict Definition of Self-Consistent Probability Bubble
  
+
+$$
 Definition 3 (Self-Consistent Probability Bubble): A measurable subset \mathcal{B} \subseteq \mathcal{U} is called a self-consistent probability bubble if and only if it satisfies the following two core conditions:
+$$
+
  
+
+$$
 1. Rule Self-Consistency and Causal Closure: All states, evolution paths, and observable events within \mathcal{B} follow a set of closed, non-contradictory, and reproducible intrinsic rules (such as physical laws, causality, logical rules). This set of rules can completely define the state evolution and event correlation within \mathcal{B} without logical paradoxes, and has no uncontrollable causal coupling with the states in \mathcal{U} \setminus \mathcal{B}.
+$$
+
+$$
 2. Measurability and Support Completeness: A σ-algebra \mathcal{F}_\mathcal{B} (i.e., the set of all observable events within \mathcal{B}) can be defined on \mathcal{B}, and there exists a measure P_\mathcal{B} supported on \mathcal{B}, that is, for any A \cap \mathcal{B} = \emptyset, P_\mathcal{B}(A) = 0.
+$$
+
  
 2.4 Definition of Intrinsic Probability Measure Within the Bubble
  
+
+$$
 Definition 4 (Intrinsic Probability Measure Within the Bubble): For a self-consistent probability bubble \mathcal{B}, its intrinsic probability measure P_\mathcal{B} is a probability measure defined on the measurable space (\mathcal{B}, \mathcal{F}_\mathcal{B}), satisfying all axioms of Kolmogorov's axiomatic probability theory:
+$$
+
  
+
+$$
 1. Non-negativity: For any event A \in \mathcal{F}_\mathcal{B}, P_\mathcal{B}(A) \geq 0;
+$$
+
+$$
 2. Normalization: P_\mathcal{B}(\mathcal{B}) = 1;
+$$
+
+$$
 3. Countable additivity: For any countable family of pairwise disjoint events \{A_i\}_{i=1}^\infty \subseteq \mathcal{F}_\mathcal{B}, P_\mathcal{B}(\bigcup_{i=1}^\infty A_i) = \sum_{i=1}^\infty P_\mathcal{B}(A_i).
+$$
+
  
 This measure is defined from the "observer's perspective" inside the bubble, and is only valid for events within the bubble. Its physical meaning is the relative occurrence probability of events inside the bubble.
  
@@ -73,60 +120,126 @@ Based on the above definitions, this section carries out strict mathematical pro
  
 3.1 Global Zero Measure Theorem of the Total-State Universe Space
  
+
+$$
 Theorem 1 (Global Zero Measure Theorem): For the total-state universe space \mathcal{U} and its global outer measure P_{total}, P_{total}(\mathcal{U}) = 0.
+$$
+
  
 Proof: We complete the proof through three independent logical paths, all of which point to the inevitable conclusion of global zero measure.
  
 Path 1: Proof of Null Measure under Self-Consistency Constraints
  
+
+$$
 The total-state space \mathcal{U} can be divided into two disjoint subsets: the complete set of self-consistent bubbles \mathcal{S} = \bigcup_{\mathcal{B} \in \mathbb{B}} \mathcal{B} (where \mathbb{B} is the set of all self-consistent probability bubbles), and the set of non-self-consistent chaotic states \mathcal{C} = \mathcal{U} \setminus \mathcal{S}.
+$$
+
  
+
+$$
 First, self-consistency is an extremely strong constraint on cosmic states. A set that can be called "self-consistent" must satisfy causal closure, non-contradictory rules, and definable evolution, which means its states must be limited by a set of finite or countably infinite constraints. In the infinite-dimensional total-state space \mathcal{U}, the subset satisfying finite/countably infinite constraints must be a null set in \mathcal{U}.
+$$
+
  
+
+$$
 Analogous to the null measure of low-dimensional embedding: the n-dimensional Lebesgue measure of a k-dimensional submanifold (k < n) in n-dimensional Euclidean space is strictly zero. Similarly, all self-consistent bubbles \mathcal{B} are essentially low-dimensional embedded submanifolds in the infinite-dimensional total-state space \mathcal{U}, and their global outer measure satisfies P_{total}(\mathcal{B}) = 0.
+$$
+
  
+
+$$
 Since the set \mathbb{B} of self-consistent bubbles is a countably infinite set (the set of definable self-consistent rules is countable), according to the countable additivity of measure:
+$$
+
+$$
 P_{total}(\mathcal{S}) = P_{total}(\bigcup_{\mathcal{B} \in \mathbb{B}} \mathcal{B}) = \sum_{\mathcal{B} \in \mathbb{B}} P_{total}(\mathcal{B}) = \sum_{\mathcal{B} \in \mathbb{B}} 0 = 0
+$$
+
  
+
+$$
 Second, for the set \mathcal{C} of non-self-consistent chaotic states, its elements do not satisfy any stable rules or causal constraints, and cannot form a measurable set with stable boundaries, so its global outer measure is naturally zero, that is, P_{total}(\mathcal{C}) = 0.
+$$
+
  
+
+$$
 In summary, P_{total}(\mathcal{U}) = P_{total}(\mathcal{S} \cup \mathcal{C}) = P_{total}(\mathcal{S}) + P_{total}(\mathcal{C}) = 0 + 0 = 0.
+$$
+
  
 Path 2: Proof of Creation ex nihilo with Measure Conservation
  
+
+$$
 If we assume P_{total}(\mathcal{U}) > 0, we will inevitably face the origin dilemma of "where does the positive-measure total-state space come from", returning to the logical paradox of the first cause. The setting of P_{total}(\mathcal{U}) = 0 naturally meets the requirement of measure conservation: the total weight of the total-state space is zero, without any initial "energy injection" or "first cause". The emergence and evolution of self-consistent bubbles will never break the conservation of the global total measure of zero, which perfectly realizes the self-consistent explanation of creation ex nihilo of the universe origin.
+$$
+
  
 Path 3: Proof from Closure Property of Null Sets
  
+
+$$
 In the total-state space, all state sets that can be defined and described are null sets; while the undefinable and indescribable chaotic states also do not have the definability of positive measure. According to the monotonicity of measure, the measure of the whole space must be less than or equal to the supremum of the measures of all subsets, and the supremum of the measures of all subsets is zero, so P_{total}(\mathcal{U}) = 0.
+$$
+
  
 Q.E.D.
  
 3.2 Local Normalization Theorem of Self-Consistent Probability Bubbles
  
+
+$$
 Theorem 2 (Local Normalization Theorem): For any self-consistent probability bubble \mathcal{B} satisfying Definition 3, its intrinsic probability measure P_\mathcal{B} must satisfy the normalization: P_\mathcal{B}(\mathcal{B}) = 1.
+$$
+
  
 Proof: We complete the proof of this theorem from three dimensions: the mandatory constraint of probability axioms, the inevitable result of self-consistency and closure, and the natural locking of the observer's perspective.
  
 Dimension 1: Mandatory Constraints of Probability Axioms
  
+
+$$
 One of the core attributes of a self-consistent probability bubble \mathcal{B} is that a complete measurable space (\mathcal{B}, \mathcal{F}_\mathcal{B}) can be defined, and the event probability and evolution prediction inside the bubble need to be expanded based on the probability measure on this space. One of the core axioms of Kolmogorov's axiomatic system is the normalization of probability measure: the measure of the whole sample space must be 1.
+$$
+
  
+
+$$
 If a measure does not satisfy P_\mathcal{B}(\mathcal{B}) = 1, it is not a legal probability measure, cannot define the relative probability of events inside the bubble, and cannot support stable state evolution and rule reproducibility, which directly violates the premise of "rule self-consistency" of the self-consistent probability bubble. Therefore, as long as \mathcal{B} is a self-consistent probability bubble, its intrinsic measure must be a probability measure satisfying normalization.
+$$
+
  
 Dimension 2: Inevitable Result of Self-Consistency and Closure
  
+
+$$
 The causal closure of the self-consistent probability bubble determines that all evolution and observations inside the bubble can only be completed within \mathcal{B}, without causal coupling with the states outside the bubble. This means that all probability judgments inside the bubble are essentially conditional probability P(\cdot | \mathcal{B}), that is, "the probability of an event occurring under the premise that the self-consistent bubble \mathcal{B} exists and its intrinsic rules hold".
+$$
+
  
 According to the standard definition of conditional probability:
+
+$$
 P(A | \mathcal{B}) = \frac{P_{total}(A \cap \mathcal{B})}{P_{total}(\mathcal{B})}
+$$
+
+$$
 Although from the global perspective P_{total}(\mathcal{B}) = 0, the conditional probability inside the bubble is defined within \mathcal{B}, and its core is the relative weight of events. In order to make the relative weight calculable and reproducible, the conditional probability must be normalized, which naturally satisfies P(\mathcal{B} | \mathcal{B}) = 1.
+$$
+
  
 If the intrinsic total measure of a "bubble" is not 1, there are only two possibilities: one is that its rules are not self-consistent, resulting in probability divergence and logical paradoxes; the other is that it does not satisfy causal closure and has coupling with other bubbles, which is essentially just a subset of a larger self-consistent bubble, not an independent self-consistent probability bubble.
  
 Dimension 3: Perspective Locking of Observers Inside the Bubble
  
+
+$$
 For observers inside the bubble, all their observation, experiment, and cognitive activities can only be carried out within \mathcal{B}, and cannot perceive the total-state space \mathcal{U} outside the bubble, nor the attribute of P_{total}(\mathcal{B}) = 0 of the global outer measure. All possibilities that the observer can access are limited within the scope of \mathcal{B}, so their probability cognition of the world must be a normalized probability system with \mathcal{B} as the whole sample space, which naturally satisfies P_\mathcal{B}(\mathcal{B}) = 1.
+$$
+
  
 Q.E.D.
  
@@ -134,11 +247,19 @@ Q.E.D.
  
 Based on the above two theorems, we can directly obtain two key corollaries to further improve the logical closed loop of the model.
  
+
+$$
 Corollary 1 (Existence of Null Measure Bubbles): All self-consistent probability bubbles \mathcal{B} are non-empty null sets in the total-state universe space \mathcal{U}, that is, P_{total}(\mathcal{B}) = 0 and \mathcal{B} \neq \emptyset.
+$$
+
  
 This corollary directly explains the classic contradiction of "zero probability but possible occurrence": the self-consistent bubble has a measure of 0 from the global perspective, but it itself is a non-empty set containing achievable states, and the events inside it are completely possible to occur, which is essentially different from the impossible event corresponding to the empty set.
  
+
+$$
 Corollary 2 (Non-Impossibility of Null Measure Events Within the Bubble): For any null measure event A inside the self-consistent probability bubble \mathcal{B} (i.e., P_\mathcal{B}(A) = 0), A is not an impossible event.
+$$
+
  
 This corollary is a natural extension of the properties of null sets inside the bubble. For example, thermodynamic entropy decrease events, macroscopic quantum tunneling events, etc., have a probability of 0 under the intrinsic measure inside the bubble, but are not absolutely impossible to occur, only "almost certainly not to occur".
  
