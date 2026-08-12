@@ -26,31 +26,41 @@
 
 2.1 局部概率值
 
+$$
 P_s = f(\Delta S_{\text{local}}, \Delta S_{\text{global}})
+$$
 
 其中 f 是相变触发函数，\Delta S_{\text{local}} 为局部熵变化，\Delta S_{\text{global}} 为环境熵变化。
 
 2.2 熵密度
 
+$$
 \rho_S = -\int_{\mathcal{B}} P(\omega) \ln P(\omega) \, d\mu
+$$
 
 表征信息被压缩的程度。熵密度越高，结构越有序。
 
 2.3 自洽性指标
 
+$$
 C_{\text{self}} = \frac{1}{1 + \text{Contradiction}(\mathcal{B})}
+$$
 
 其中 \text{Contradiction}(\mathcal{B}) 度量泡内规则的逻辑矛盾程度。完全自洽时 C_{\text{self}} = 1。
 
 2.4 耦合强度
 
+$$
 J = \int_{\mathcal{B}} \mathbf{m} \cdot \mathbf{B} \, dV
+$$
 
 在磁筹系统中，这是磁化方向 \mathbf{m} 与全局磁场 \mathbf{B} 的相互作用能量。在一般系统中，可推广为结构与其环境的耦合程度。
 
 2.5 历史累积
 
+$$
 H = \int_0^t \Delta S(\tau) \, d\tau
+$$
 
 记录泡从形成以来经历的总熵变，即“熵印”的积分。
 
@@ -58,7 +68,9 @@ H = \int_0^t \Delta S(\tau) \, d\tau
 
 概率强度可定义为上述五个因子的加权乘积：
 
+$$
 I(\mathcal{B}) = P_s \cdot \rho_S \cdot C_{\text{self}} \cdot e^{\beta J} \cdot e^{\gamma H}
+$$
 
 其中 \beta, \gamma 为耦合系数，反映不同维度对结构稳定性的贡献权重。该形式确保：任何一个维度趋近于零，都会导致整体强度急剧下降。
 
@@ -74,7 +86,9 @@ I(\mathcal{B}) = P_s \cdot \rho_S \cdot C_{\text{self}} \cdot e^{\beta J} \cdot 
 
 定义概率强度梯度：
 
+$$
 \nabla I_{\text{intrinsic}} = \left\| \frac{\partial I}{\partial \mathbf{r}} \right\|
+$$
 
 表征结构内在的演化驱动力——朝向吸引子的“恢复力”。
 
@@ -104,7 +118,9 @@ I(\mathcal{B}) = P_s \cdot \rho_S \cdot C_{\text{self}} \cdot e^{\beta J} \cdot 
 
 设整个概率场为 \mathcal{P}(\mathbf{r}, t)，其演化由以下非线性偏微分方程描述：
 
+$$
 \frac{\partial \mathcal{P}}{\partial t} = \nabla \cdot \left( D \nabla \frac{\delta \mathcal{S}}{\delta \mathcal{P}} \right) + \mathcal{F}(I) \cdot \mathcal{P} + \mathcal{E}_{\text{ext}}(\mathbf{r}, t)
+$$
 
 其中：
 
@@ -116,7 +132,9 @@ I(\mathcal{B}) = P_s \cdot \rho_S \cdot C_{\text{self}} \cdot e^{\beta J} \cdot 
 
 概率强度本身满足反应-扩散方程：
 
+$$
 \frac{\partial I}{\partial t} = \alpha \nabla^2 I + \beta I (1 - I/I_{\text{max}}) - \gamma I + \eta(t)
+$$
 
 其中：
 
@@ -129,7 +147,9 @@ I(\mathcal{B}) = P_s \cdot \rho_S \cdot C_{\text{self}} \cdot e^{\beta J} \cdot 
 
 局部相变在概率强度梯度大的区域触发：
 
+$$
 P_{\text{trigger}} = \Theta(|\nabla I| - I_{\text{th}})
+$$
 
 其中 \Theta 为阶跃函数，I_{\text{th}} 为临界强度梯度。
 
