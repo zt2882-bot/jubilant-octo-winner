@@ -282,20 +282,20 @@ The results are qualitatively consistent with the complexity of the two painting
 
 ```python
 def NM6_d(
-    history: List[Vector6],    # Historical state sequence, each element a six-dimensional integer vector
-    current: Vector6,          # Current state vector
-    q: float,                  # Modular parameter, range (0,1)
-    alpha: float,              # Weight for Ramanujan memory term
-    gamma: float,              # Weight for long-range memory strength
-    tau: int = 1               # Lag step for long-range memory computation, default 1
+history: List[Vector6],    # Historical state sequence, each element a six-dimensional integer vector
+current: Vector6,          # Current state vector
+q: float,                  # Modular parameter, range (0,1)
+alpha: float,              # Weight for Ramanujan memory term
+gamma: float,              # Weight for long-range memory strength
+tau: int = 1               # Lag step for long-range memory computation, default 1
 ) -> Tuple[float, float, float, Optional[float]]:
-    """
-    Returns:
-        H_nm  : Non-Markovian entropy at current time
-        psi   : Ramanujan memory term value
-        phi   : Long-range memory strength value
-        inv   : Current cumulative structural invariant (if count>0), otherwise None
-    """
+"""
+Returns:
+H_nm  : Non-Markovian entropy at current time
+psi   : Ramanujan memory term value
+phi   : Long-range memory strength value
+inv   : Current cumulative structural invariant (if count>0), otherwise None
+"""
 ```
 
 6.10.2 Subfunction Descriptions
@@ -376,58 +376,58 @@ If |LHS - RHS| > ε, a warning is issued that the parameters or state may deviat
 ```python
 def NM6_d(history, current, q, alpha, gamma, tau=1):
     # 1. Determine current time index t
-    t = len(history) + 1
+t = len(history) + 1
     
     # 2. Obtain transition probability p_t (simplified; external implementation needed)
-    p_t = get_transition_prob(current, history)
+p_t = get_transition_prob(current, history)
     
     # 3. Compute Ramanujan memory term
-    v5 = current[4]        # fifth dimension (memory depth)
-    psi = 0.0
-    for k in range(1, t+1):
-        psi += q**(k**2) / (1 - q**v5)
+v5 = current[4]        # fifth dimension (memory depth)
+psi = 0.0
+for k in range(1, t+1):
+psi += q**(k**2) / (1 - q**v5)
     
     # 4. Compute long-range memory strength
-    if t > tau:
-        all_states = history + [current]
-        corr_sum = 0.0
-        for s in range(tau, t):
-            corr_sum += dot(all_states[s], all_states[s - tau])
-        phi = corr_sum / (t - tau)
-    else:
-        phi = 0.0
+if t > tau:
+all_states = history + [current]
+corr_sum = 0.0
+for s in range(tau, t):
+corr_sum += dot(all_states[s], all_states[s - tau])
+phi = corr_sum / (t - tau)
+else:
+phi = 0.0
     
     # 5. Compute Shannon entropy term
-    shannon = 0.0
-    if p_t > 0:
-        shannon = - p_t * math.log(p_t)
+shannon = 0.0
+if p_t > 0:
+shannon = - p_t * math.log(p_t)
     
     # 6. Total entropy
-    H_nm = shannon + alpha * psi + gamma * phi
+H_nm = shannon + alpha * psi + gamma * phi
     
     # 7. Update invariant (using global variables or external storage)
-    global sum_H, count
-    sum_H += H_nm
-    count += 1
-    inv = sum_H / count if count > 0 else None
+global sum_H, count
+sum_H += H_nm
+count += 1
+inv = sum_H / count if count > 0 else None
     
     # 8. Optional constraint verification (every 100 steps)
-    if t % 100 == 0:
+if t % 100 == 0:
         # Compute LHS (careful with numerical overflow)
-        lhs = 0.0
-        for n in range(t+1):
-            prod_k = 1.0
-            for k in range(1, n+1):
-                prod_k *= (1 - q**k)
-            if prod_k != 0:
-                lhs += q**(n**2) / prod_k
-        rhs = 1.0
-        for n in range(t+1):
-            rhs /= ((1 - q**(5*n+1)) * (1 - q**(5*n+4)))
-        if abs(lhs - rhs) > 1e-6:
-            print(f"Warning: Ramanujan constraint violation at t={t}")
+lhs = 0.0
+for n in range(t+1):
+prod_k = 1.0
+for k in range(1, n+1):
+prod_k *= (1 - q**k)
+if prod_k != 0:
+lhs += q**(n**2) / prod_k
+rhs = 1.0
+for n in range(t+1):
+rhs /= ((1 - q**(5*n+1)) * (1 - q**(5*n+4)))
+if abs(lhs - rhs) > 1e-6:
+print(f"Warning: Ramanujan constraint violation at t={t}")
     
-    return H_nm, psi, phi, inv
+return H_nm, psi, phi, inv
 ```
 
 6.10.4 Complexity Analysis
