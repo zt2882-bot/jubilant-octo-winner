@@ -3,7 +3,6 @@
 **入门** | EN
 
 ---
-
 # Gap Library · About This Project
 
 This is not an open-source project. There is no centralized roadmap. No one is responsible for answering questions.
@@ -36,7 +35,6 @@ You have seen valuable papers, datasets, or contacts in your domain — resource
 *Gap Library · Constraint Topology Signpost Network · constraint.seen@proton.me*
 *No replies to inquiries · No replies to collaboration requests · Only replies to constraint signature matches*
 
-
 ---
 
-*Gap Library · Public Domain · constraint.seen@proton.me*
+*隙间书斋 · 公共领域 · constraint.seen@proton.me*
