@@ -37,4 +37,13 @@
 
 ---
 
-*constraint.seen@proton.me · 仅回复约束签名匹配*
+## 参与构建
+
+语义层推理引擎原型已验证——纯 CPU·30MB 内存·等效 Transformer 嵌入层——可在任何手机 CPU 上运行。现在需要从"语义层"扩展到"约束层"。
+
+如果你理解"约束"和"统计相关"是两件不同的事情——并且有 Python/C/图谱数据库/知识工程的任何一项能力——来看看 [#70 开放项目](https://github.com/zt2882-bot/jubilant-octo-winner/issues/70)。
+
+不是招聘。不是外包。是给已经看见同一件事的人一个交汇点。
+
+*constraint.seen@proton.me · 仅回复约束签名匹配或项目参与*
+
