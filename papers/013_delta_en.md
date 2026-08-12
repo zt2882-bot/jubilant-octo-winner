@@ -4,7 +4,6 @@
 
 ---
 
-
 Abstract: Based on the probabilistic bubble universe theory, this paper proposes a framework of probabilistic dynamics, defining "probability intensity" as a comprehensive measure of a structure's self-consistency, entropy density, coupling strength, and historical accumulation. The core theorem states: when the probability intensity of a structure exceeds a critical threshold and its intrinsic gradient is greater than the intensity of external interference, the system enters an attractor basin, and its subsequent evolution path becomes probabilistically necessary. This framework unifies the evolutionary laws of systems ranging from physical to cognitive structures, providing a mathematical foundation for understanding self-organization, stability, and necessity in complex systems.
 
 Keywords: Probability intensity; intrinsic gradient; probabilistic necessity; attractor; self-consistent structure; probabilistic dynamics
