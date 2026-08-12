@@ -86,7 +86,11 @@
 类比于低维嵌入的零测性：n维欧几里得空间中的k维子流形（k < n），其n维勒贝格测度严格为0。同理，所有自洽泡\mathcal{B}，本质都是无限维全态空间\mathcal{U}中的低维嵌入子流形，其全域外测度满足P_{total}(\mathcal{B}) = 0。
  
 由于自洽泡的集合\mathbb{B}是可数无穷集（可定义的自洽规则集合是可数的），根据测度的可数可加性，有：
+
+$$
 P_{total}(\mathcal{S}) = P_{total}(\bigcup_{\mathcal{B} \in \mathbb{B}} \mathcal{B}) = \sum_{\mathcal{B} \in \mathbb{B}} P_{total}(\mathcal{B}) = \sum_{\mathcal{B} \in \mathbb{B}} 0 = 0
+$$
+
  
 其次，对于非自洽混沌态集合\mathcal{C}，其元素不满足任何稳定的规则与因果约束，无法形成可测的、具有稳定边界的集合，其全域外测度天然为0，即P_{total}(\mathcal{C}) = 0。
  
@@ -119,7 +123,11 @@ P_{total}(\mathcal{S}) = P_{total}(\bigcup_{\mathcal{B} \in \mathbb{B}} \mathcal
 自洽概率泡的因果闭合性，决定了泡内的所有演化与观测，都只能在\mathcal{B}内部完成，与泡外的状态无因果耦合。这意味着，泡内的所有概率判断，本质上都是条件概率P(\cdot | \mathcal{B})，即“在自洽泡\mathcal{B}存在、其内禀规则成立的前提下，事件发生的概率”。
  
 根据条件概率的标准定义：
+
+$$
 P(A | \mathcal{B}) = \frac{P_{total}(A \cap \mathcal{B})}{P_{total}(\mathcal{B})}
+$$
+
 尽管从全域视角看P_{total}(\mathcal{B}) = 0，但泡内的条件概率是在\mathcal{B}的内部定义的，其核心是事件的相对权重。为了让相对权重具备可计算性、可复现性，必须对条件概率进行归一化处理，天然满足P(\mathcal{B} | \mathcal{B}) = 1。
  
 若一个“泡”的内禀总测度不为1，只有两种可能：一是其规则不自洽，出现概率发散、逻辑悖论；二是其不满足因果闭合性，与其他泡存在耦合，本质上只是一个更大的自洽泡的子集，而非独立的自洽概率泡。
