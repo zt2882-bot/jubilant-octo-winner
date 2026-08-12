@@ -4,7 +4,6 @@
 **ε·跨域同构** | EN
 
 ---
-
 6. Non-Markovian Extension: The Ramanujan Mathematical Framework
 
 The core SPCIM model described in Sections 3–5 assumes that the influence of a visual work can be adequately captured by a static, dimension-wise product of entropies, with time integration accounting for decay. However, real-world information systems often exhibit non-Markovian behavior: the future impact depends not only on the current state but also on the entire history of how the content has been perceived, shared, and reinterpreted. This historical dependence, along with deep cross-dimensional coupling, suggests the need for a more sophisticated mathematical foundation.
@@ -154,7 +153,7 @@ $$
 Z(\beta_1,\dots,\beta_6) = \sum_{\text{all states}} \exp\left(-\sum_{d=1}^6 \beta_d E_d\right)
 $$
 
-   and investigate its modular transformation properties.
+and investigate its modular transformation properties.
 
 $$
 2. Identify which mock theta function(s) naturally appear in the expansion of \log Z near critical points (e.g., when one of the \beta_d approaches a threshold). This would give a concrete expression for M(\mathbf{p}).
