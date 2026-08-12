@@ -77,7 +77,9 @@ SPCIM建立在以下元规则之上：
 
 最终权重为：
 
+$$
 w_d(W) = \frac{\omega_d(W)}{\sum_{k} \omega_k(W)}, \quad \sum w_d = 1
+$$
 
 为降低使用门槛，我们预设几组典型视窗的权重模板（如“艺术鉴赏”“广告传播”“教育评估”“内容审核”），并开放自定义接口。
 
@@ -85,7 +87,9 @@ w_d(W) = \frac{\omega_d(W)}{\sum_{k} \omega_k(W)}, \quad \sum w_d = 1
 
 采用层级加权幂乘积作为工程化公式：
 
+$$
 P_{\text{inst}} = \lambda_e \cdot E_g^{w_g} \cdot E_s^{w_s} \cdot E_c^{w_c} \cdot E_m^{w_m} \cdot E_{su}^{w_{su}}
+$$
 
 该公式符合“任一维度塌缩则整体影响力骤降”的直觉，且权重可调，适应不同视窗。
 
@@ -97,7 +101,9 @@ P_{\text{inst}} = \lambda_e \cdot E_g^{w_g} \cdot E_s^{w_s} \cdot E_c^{w_c} \cdo
 
 衰减率 k 由内容的内在属性决定：
 
+$$
 k = \alpha \cdot (1 - \bar{E}_{su}) + \beta \cdot (1 - \lambda_e) + \gamma \cdot C
+$$
 
 其中：
 
@@ -113,7 +119,9 @@ k = \alpha \cdot (1 - \bar{E}_{su}) + \beta \cdot (1 - \lambda_e) + \gamma \cdot
 
 伦理系数 \lambda_e 的计算需视窗化：
 
+$$
 \lambda_e = \prod_{i} \lambda_i(W), \quad \lambda_i \in [0,1]
+$$
 
 其中 \lambda_i 对应不同的伦理子维度（如法律合规、公共善意、无害性等）。每个子维度的标准由视窗 W 定义（例如不同国家的法律、不同文化的道德准则）。若任一 \lambda_i = 0，则 \lambda_e = 0，内容总影响力归零（系统自动屏蔽）。
 
