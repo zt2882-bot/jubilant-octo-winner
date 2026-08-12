@@ -74,7 +74,9 @@ Keywords: Probability Bubble; Emergence; Entropy Gradient; Phase Transition; Att
 对于任意概率泡 \Omega_i，定义其局域熵为香农熵：
  
 
+$$
 S_i = -\sum_{\omega \in \Omega_i} P_i(\omega) \log P_i(\omega)
+$$
 
  
 本框架中，熵是描述概率分布状态的唯一通用度量，其核心物理意义为：
@@ -101,7 +103,9 @@ S_i = -\sum_{\omega \in \Omega_i} P_i(\omega) \log P_i(\omega)
 定义相变概率为：
  
 
+$$
 P_s = f(\Delta S_{\text{local}}, \Delta S_{\text{global}})
+$$
 
  
 其中：
@@ -117,7 +121,9 @@ P_s = f(\Delta S_{\text{local}}, \Delta S_{\text{global}})
 结构种子通过非线性反馈，触发周围概率分布的定向增殖，完成结构的扩张与固化。定义种子泡的存在概率为 P_s(t)，其演化遵循动力学方程：
  
 
+$$
 \frac{dP_s}{dt} = \omega (P_{\text{max}} - P_s) - \gamma P_s
+$$
 
  
 其中：
@@ -129,13 +135,17 @@ P_s = f(\Delta S_{\text{local}}, \Delta S_{\text{global}})
 该方程的离散形式为：
  
 
+$$
 P_s^{(t+1)} = P_s^{(t)} + \Delta t \left[ \omega (P_{\text{max}} - P_s^{(t)}) - \gamma P_s^{(t)} \right]
+$$
 
  
 系统最终会振荡收敛到稳定平衡态：
  
 
+$$
 P_s^* = \frac{\omega P_{\text{max}}}{\omega + \gamma}
+$$
 
  
 该稳定值 P_s^* 即为结构固化后的稳定概率强度，对应我们观测到的「稳定实体」的本质——它不是绝对的确定性，而是概率分布收敛后的稳定涌现态。
@@ -145,7 +155,9 @@ P_s^* = \frac{\omega P_{\text{max}}}{\omega + \gamma}
 传统物理中，结构的边界由人为定义或物质分布决定；而本框架中，概率泡的边界完全内生，由熵梯度的消失严格定义：
  
 
+$$
 \nabla S = 0
+$$
 
  
 概率泡会沿着熵梯度的方向自发扩张，直到局域熵与环境熵达到平衡（熵梯度为0），自然形成结构的边界。这一机制保证了结构的边界完全由系统自身的演化决定，无需任何外部标尺，是自洽性的核心体现。
