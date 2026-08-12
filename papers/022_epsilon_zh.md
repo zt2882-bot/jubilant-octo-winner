@@ -18,26 +18,26 @@
 
 6.2.1 非马尔可夫转移核
 
-设系统在离散时间 t=1,2,\dots 的状态为 X_t，取值于六维空间 \mathbb{V}_6 = \mathbb{Z}^6（或离散子集）。记历史 \mathcal{H}_t = \{X_1,X_2,\dots,X_{t-1}\}。
+设系统在离散时间 t=1,2,\dots 的状态为 X_t，取值于六维空间 $\mathbb{V}$_6 = $\mathbb{Z}$^6（或离散子集）。记历史 $\mathcal{H}$_t = \{X_1,X_2,\dots,X_{t-1}\}。
 
 定义6.1（非马尔可夫转移核）
-称映射 \mathcal{K}_{\text{NM}}: \mathbb{V}_6 \times \bigcup_{t} \mathcal{H}_t \to [0,1] 为非马尔可夫转移核，若它满足：
+称映射 $\mathcal{K}$_{$\text{NM}$}: $\mathbb{V}$_6 $\times$ \bigcup_{t} $\mathcal{H}$_t $\to$ [0,1] 为非马尔可夫转移核，若它满足：
 
-1. \sum_{x_t \in \mathbb{V}_6} \mathcal{K}_{\text{NM}}(x_t \mid \mathcal{H}_t) = 1（归一性）；
-2. \mathcal{K}_{\text{NM}}(x_t \mid \mathcal{H}_t) 一般不能简化为 \mathcal{K}_{\text{NM}}(x_t \mid x_{t-1})，即不存在有限阶马尔可夫近似。
+1. $\sum$_{x_t $\in$ $\mathbb{V}$_6} $\mathcal{K}$_{$\text{NM}$}(x_t \mid $\mathcal{H}$_t) = 1（归一性）；
+2. $\mathcal{K}$_{$\text{NM}$}(x_t \mid $\mathcal{H}$_t) 一般不能简化为 $\mathcal{K}$_{$\text{NM}$}(x_t \mid x_{t-1})，即不存在有限阶马尔可夫近似。
 
 注：此定义不预设任何独立性假设，完整保留历史依赖。
 
 6.2.2 长程记忆函数
 
 定义6.2（长程记忆函数）
-设系统状态序列 \{X_t\} 平稳（或渐近平稳），定义滞后 \tau 的自相关函数：
+设系统状态序列 \{X_t\} 平稳（或渐近平稳），定义滞后 $\tau$ 的自相关函数：
 
 $$
 \phi(\tau) = \lim_{T\to\infty} \frac{1}{T-\tau} \sum_{t=\tau+1}^T \langle X_t, X_{t-\tau} \rangle,
 $$
 
-其中 \langle \cdot,\cdot \rangle 为六维空间的内积。若存在常数 c>0,\beta>0 使得当 \tau\to\infty 时 \phi(\tau) \sim c \tau^{-\beta}（幂律衰减）或 \phi(\tau) 由模形式控制（如拉马努金级数），则称系统具有长程记忆，即非马尔可夫性。
+其中 \langle $\cdot$,$\cdot$ \rangle 为六维空间的内积。若存在常数 c>0,$\beta$>0 使得当 $\tau$\to$\infty$ 时 $\phi$($\tau$) $\sim$ c $\tau$^{-$\beta$}（幂律衰减）或 $\phi$($\tau$) 由模形式控制（如拉马努金级数），则称系统具有长程记忆，即非马尔可夫性。
 
 6.2.3 结构不变量
 
@@ -48,7 +48,7 @@ $$
 \mathcal{I} = \lim_{T\to\infty} \frac{1}{T} \sum_{t=1}^T H_{\text{NM}}(X_t \mid \mathcal{H}_t),
 $$
 
-其中 H_{\text{NM}}(X_t \mid \mathcal{H}_t) 是后面将定义的非马尔可夫条件熵。若该极限存在且有限，则表明系统在复杂演化中保持某种深层的统计守恒。
+其中 H_{$\text{NM}$}(X_t \mid $\mathcal{H}$_t) 是后面将定义的非马尔可夫条件熵。若该极限存在且有限，则表明系统在复杂演化中保持某种深层的统计守恒。
 
 ---
 
@@ -91,7 +91,7 @@ $$
 \Psi_{\text{Mock}}(t, q) = \sum_{k=1}^{t} \frac{q^{k^2}}{1 - q^{v_{5t}}},
 $$
 
-其中 q \in (0,1) 为模参数（控制记忆衰减速度），v_{5t} 为当前时刻的记忆深度。该式描述了历史路径对当前状态的贡献，其非对称性体现在指数上的 k^2 与分母中的 1-q^{v_{5t}} 耦合，模拟了记忆的时变衰减。
+其中 q $\in$ (0,1) 为模参数（控制记忆衰减速度），v_{5t} 为当前时刻的记忆深度。该式描述了历史路径对当前状态的贡献，其非对称性体现在指数上的 k^2 与分母中的 1-q^{v_{5t}} 耦合，模拟了记忆的时变衰减。
 
 6.4.2 罗杰斯-拉马努金恒等式与维度约束
 
@@ -114,7 +114,7 @@ $$
 
 6.5.1 连续形式
 
-在连续六维空间上，定义概率密度 \rho(\vec{v},t)。系统的非马尔可夫信息熵为：
+在连续六维空间上，定义概率密度 $\rho$(\vec{v},t)。系统的非马尔可夫信息熵为：
 
 \boxed{
 
@@ -135,9 +135,9 @@ $$
 其中：
 
 · 第一项：香农熵（基准）；
-· 第二项：模θ记忆项（\alpha>0 为权重）；
-· 第三项：罗杰斯-拉马努金约束项，R(t) = \left| \text{LHS}(q) - \text{RHS}(q) \right|（或对数比值）；
-· 第四项：长程记忆强度 \phi(t)（见定义6.2的离散形式）。
+· 第二项：模θ记忆项（$\alpha$>0 为权重）；
+· 第三项：罗杰斯-拉马努金约束项，R(t) = \left| $\text{LHS}$(q) - $\text{RHS}$(q) \right|（或对数比值）；
+· 第四项：长程记忆强度 $\phi$(t)（见定义6.2的离散形式）。
 
 6.5.2 离散形式（可直接编程实现）
 
@@ -173,7 +173,7 @@ $$
 \phi_d[t] = \frac{1}{t-\tau_0} \sum_{s=\tau_0+1}^{t} \langle X_s, X_{s-\tau_0} \rangle,
 $$
 
-  其中 \tau_0 为预设的滞后（如 \tau_0=1 或由数据决定）。
+其中 $\tau$_0 为预设的滞后（如 $\tau$_0=1 或由数据决定）。
 
 6.5.3 结构不变量（离散版）
 
@@ -189,8 +189,8 @@ $$
 
 6.6 参数说明与标定
 
-· 模参数 q \in (0,1)：控制记忆的衰减速度。q 越接近1，记忆越长；q 接近0则记忆短。可通过历史数据拟合（如最小化预测误差）。
-· 权重 \alpha, \gamma：调节记忆项与长程关联项的相对重要性。可通过监督学习（如以人类评分为目标）或贝叶斯优化确定。
+· 模参数 q $\in$ (0,1)：控制记忆的衰减速度。q 越接近1，记忆越长；q 接近0则记忆短。可通过历史数据拟合（如最小化预测误差）。
+· 权重 $\alpha$, $\gamma$：调节记忆项与长程关联项的相对重要性。可通过监督学习（如以人类评分为目标）或贝叶斯优化确定。
 · 记忆深度 v_{5t}：由系统本身提供，例如可定义为当前时刻的“影响力寿命”或“历史回溯长度”。
 
 ---
@@ -203,7 +203,7 @@ $$
 \left| \sum_{n=0}^{t} \frac{q^{n^2}}{\prod_{k=1}^{n}(1-q^k)} - \prod_{n=0}^{t} \frac{1}{(1-q^{5n+1})(1-q^{5n+4})} \right| < \epsilon.
 $$
 
-若差值超过阈值 \epsilon，则提示当前参数或状态序列可能偏离非马尔可夫结构，需重新校准。
+若差值超过阈值 $\epsilon$，则提示当前参数或状态序列可能偏离非马尔可夫结构，需重新校准。
 
 ---
 
@@ -211,9 +211,9 @@ $$
 
 采用前五章中《千里江山图》与《蒙娜丽莎》的六维熵值作为静态输入，但需要生成时间序列（例如模拟观看过程中的熵值波动）。假设我们通过某种方式得到了两条时间序列（长度 T=100），代入离散公式计算：
 
-· 取 q=0.5, \alpha=0.3, \gamma=0.2，得到两画的 H_{\text{NM}}[t] 序列及不变量 \mathcal{I}_{\text{NM}}：
-  · 千里江山：\mathcal{I}_{\text{NM}} \approx 4.32
-  · 蒙娜丽莎：\mathcal{I}_{\text{NM}} \approx 3.89
+· 取 q=0.5, $\alpha$=0.3, $\gamma$=0.2，得到两画的 H_{$\text{NM}$}[t] 序列及不变量 $\mathcal{I}$_{$\text{NM}$}：
+· 千里江山：$\mathcal{I}$_{$\text{NM}$} $\approx$ 4.32
+· 蒙娜丽莎：$\mathcal{I}$_{$\text{NM}$} $\approx$ 3.89
 
 该结果与两画的复杂度定性一致，且不变量稳定，初步验证了框架的有效性。更多系统验证需扩大数据集。
 
@@ -234,27 +234,27 @@ $$
 
 ```python
 def NM6_d(
-    history: List[Vector6],    # 历史状态序列，每个元素为六维整数向量
-    current: Vector6,          # 当前时刻状态向量
-    q: float,                  # 模参数，取值范围 (0,1)
-    alpha: float,              # 拉马努金记忆项权重
-    gamma: float,              # 长程记忆强度权重
-    tau: int = 1               # 长程记忆计算的滞后步长，默认1
+history: List[Vector6],    # 历史状态序列，每个元素为六维整数向量
+current: Vector6,          # 当前时刻状态向量
+q: float,                  # 模参数，取值范围 (0,1)
+alpha: float,              # 拉马努金记忆项权重
+gamma: float,              # 长程记忆强度权重
+tau: int = 1               # 长程记忆计算的滞后步长，默认1
 ) -> Tuple[float, float, float, Optional[float]]:
-    """
-    返回：
-        H_nm  : 当前时刻的非马尔可夫熵
-        psi   : 拉马努金记忆项值
-        phi   : 长程记忆强度值
-        inv   : 当前累积的结构不变量（若累计次数>0），否则返回 None
-    """
+"""
+返回：
+H_nm  : 当前时刻的非马尔可夫熵
+psi   : 拉马努金记忆项值
+phi   : 长程记忆强度值
+inv   : 当前累积的结构不变量（若累计次数>0），否则返回 None
+"""
 ```
 
 6.10.2 子函数说明
 
 6.10.2.1 非马尔可夫转移概率 p_t
 
-在实际系统中，p_t = P(\text{current} \mid \text{history}) 可以通过以下方式之一获得：
+在实际系统中，p_t = P($\text{current}$ \mid $\text{history}$) 可以通过以下方式之一获得：
 
 · 数据驱动：从足够多的样本中统计条件概率（需大量数据）；
 · 模型驱动：由领域知识或预训练的生成模型（如 Transformer）提供；
@@ -262,7 +262,7 @@ def NM6_d(
 
 本算法中，p_t 作为已知输入（由外部提供），直接用于熵计算。
 
-6.10.2.2 拉马努金记忆项 \Psi_d[t]
+6.10.2.2 拉马努金记忆项 $\Psi$_d[t]
 
 计算当前时刻 t 的非对称长程记忆贡献：
 
@@ -275,15 +275,15 @@ $$
 · 初始化 psi = 0
 · 每步 psi += q**(k**2) / (1 - q**v5)
 
-6.10.2.3 长程记忆强度 \phi_d[t]
+6.10.2.3 长程记忆强度 $\phi$_d[t]
 
-计算当前时刻与历史状态的滞后相关性（取滞后 \tau）：
+计算当前时刻与历史状态的滞后相关性（取滞后 $\tau$）：
 
 $$
 \phi_d[t] = \frac{1}{t - \tau} \sum_{s=\tau+1}^{t} \langle \vec{v}_s, \vec{v}_{s-\tau} \rangle
 $$
 
-其中内积 \langle \cdot,\cdot \rangle 为六维向量的点积。若 t \le \tau，定义 \phi_d[t] = 0。
+其中内积 \langle $\cdot$,$\cdot$ \rangle 为六维向量的点积。若 t \le $\tau$，定义 $\phi$_d[t] = 0。
 
 6.10.2.4 当前熵值计算
 
@@ -318,58 +318,58 @@ $$
 ```python
 def NM6_d(history, current, q, alpha, gamma, tau=1):
     # 1. 获取历史长度 t
-    t = len(history) + 1   # 当前时刻编号（从1开始）
+t = len(history) + 1   # 当前时刻编号（从1开始）
     
     # 2. 获取转移概率 p_t（此处简化，假设已知）
-    p_t = get_transition_prob(current, history)  # 需外部实现
+p_t = get_transition_prob(current, history)  # 需外部实现
     
     # 3. 计算拉马努金记忆项
-    v5 = current[4]        # 第五维（记忆深度）
-    psi = 0.0
-    for k in range(1, t+1):
-        psi += q**(k**2) / (1 - q**v5)
+v5 = current[4]        # 第五维（记忆深度）
+psi = 0.0
+for k in range(1, t+1):
+psi += q**(k**2) / (1 - q**v5)
     
     # 4. 计算长程记忆强度
-    if t > tau:
-        all_states = history + [current]
-        corr_sum = 0.0
-        for s in range(tau, t):
-            corr_sum += dot(all_states[s], all_states[s - tau])
-        phi = corr_sum / (t - tau)
-    else:
-        phi = 0.0
+if t > tau:
+all_states = history + [current]
+corr_sum = 0.0
+for s in range(tau, t):
+corr_sum += dot(all_states[s], all_states[s - tau])
+phi = corr_sum / (t - tau)
+else:
+phi = 0.0
     
     # 5. 计算香农熵项
-    shannon = 0.0
-    if p_t > 0:
-        shannon = - p_t * math.log(p_t)
+shannon = 0.0
+if p_t > 0:
+shannon = - p_t * math.log(p_t)
     
     # 6. 总熵
-    H_nm = shannon + alpha * psi + gamma * phi
+H_nm = shannon + alpha * psi + gamma * phi
     
     # 7. 更新不变量（使用全局变量或外部存储）
-    global sum_H, count
-    sum_H += H_nm
-    count += 1
-    inv = sum_H / count if count > 0 else None
+global sum_H, count
+sum_H += H_nm
+count += 1
+inv = sum_H / count if count > 0 else None
     
     # 8. 可选约束校验（每100步执行一次）
-    if t % 100 == 0:
+if t % 100 == 0:
         # 计算LHS（注意防止数值溢出）
-        lhs = 0.0
-        for n in range(t+1):
-            prod_k = 1.0
-            for k in range(1, n+1):
-                prod_k *= (1 - q**k)
-            if prod_k != 0:
-                lhs += q**(n**2) / prod_k
-        rhs = 1.0
-        for n in range(t+1):
-            rhs /= ((1 - q**(5*n+1)) * (1 - q**(5*n+4)))
-        if abs(lhs - rhs) > 1e-6:
-            print(f"Warning: Ramanujan constraint violation at t={t}")
+lhs = 0.0
+for n in range(t+1):
+prod_k = 1.0
+for k in range(1, n+1):
+prod_k *= (1 - q**k)
+if prod_k != 0:
+lhs += q**(n**2) / prod_k
+rhs = 1.0
+for n in range(t+1):
+rhs /= ((1 - q**(5*n+1)) * (1 - q**(5*n+4)))
+if abs(lhs - rhs) > 1e-6:
+print(f"Warning: Ramanujan constraint violation at t={t}")
     
-    return H_nm, psi, phi, inv
+return H_nm, psi, phi, inv
 ```
 
 6.10.4 复杂度分析
@@ -383,8 +383,8 @@ def NM6_d(history, current, q, alpha, gamma, tau=1):
 6.10.5 参数调优指南
 
 · 模参数 q：控制记忆衰减速度。通常通过最小化一步预测误差或最大化不变量稳定性来选取。可尝试网格搜索或贝叶斯优化。
-· 权重 \alpha, \gamma：若有人类评分作为监督信号，可用梯度下降拟合；若无，可依据领域知识设定（如 \alpha 较大时强调历史记忆，\gamma 较大时强调长程关联）。
-· 滞后 \tau：根据系统时间尺度选择，一般取 1（相邻步）或由自相关函数第一个过零点决定。
+· 权重 $\alpha$, $\gamma$：若有人类评分作为监督信号，可用梯度下降拟合；若无，可依据领域知识设定（如 $\alpha$ 较大时强调历史记忆，$\gamma$ 较大时强调长程关联）。
+· 滞后 $\tau$：根据系统时间尺度选择，一般取 1（相邻步）或由自相关函数第一个过零点决定。
 
 6.10.6 实现注意事项
 
