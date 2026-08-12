@@ -3,7 +3,6 @@
 **α·测量自噬** | EN
 
 ---
-
 Abstract: This paper proposes a physical computing system based on movable magnetic particles (magnetic chips) as an experimental validation platform for the probabilistic bubble universe theory. Each magnetic chip represents a self-consistent probability bubble, with its spatial position and magnetization direction constituting the local state. All chips are instantaneously coupled through a global magnetic field, forming a self-consistent total probability field. The system evolves under natural magnetic dynamics, where chip motion, flipping, and coupling correspond to entropy gradient flow, single-point phase transitions, and attractor network formation in probability bubble theory. This system is essentially a "field information processor" that completes computation through the natural evolution of physical systems, with potential far exceeding traditional bit-based computing. This paper presents the theoretical framework of the magnetic chip calculator, its key mechanisms, and its rigorous correspondence with the probabilistic bubble universe, providing a roadmap for subsequent engineering implementation and theoretical validation.
 
 Keywords: Magnetic chip calculator; probabilistic bubble universe; field information processing; emergent computation; global magnetic field coupling
