@@ -3,7 +3,6 @@
 **ε·跨域同构** | EN
 
 ---
-
 Abstract
  
 The traditional understanding defines the binary system as a practical numeral system for computer operations, focusing only on its instrumental value in simplifying calculations while ignoring its fundamental ontological rationality. This paper breaks through the empirical limitation of "numerical pattern interestingness" in the primary version, strictly defines core concepts such as numeral system noise reduction and topological oscillation convergence, and demonstrates the rationality of binary system design from three dimensions: mathematical ontological analysis, strict deduction of topological structure, and isomorphism of cosmic physical reality.
