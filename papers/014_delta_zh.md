@@ -29,7 +29,7 @@ $$
 P_s = f(\Delta S_{\text{local}}, \Delta S_{\text{global}})
 $$
 
-其中 f 是相变触发函数，$Delta$ S_{$\text{local}$} 为局部熵变化，$Delta$ S_{$\text{global}$} 为环境熵变化。
+其中 f 是相变触发函数，$\Delta$ S_{$\text{local}$} 为局部熵变化，$\Delta$ S_{$\text{global}$} 为环境熵变化。
 
 2.2 熵密度
 
@@ -71,7 +71,7 @@ $$
 I(\mathcal{B}) = P_s \cdot \rho_S \cdot C_{\text{self}} \cdot e^{\beta J} \cdot e^{\gamma H}
 $$
 
-其中 $beta$, $gamma$ 为耦合系数，反映不同维度对结构稳定性的贡献权重。该形式确保：任何一个维度趋近于零，都会导致整体强度急剧下降。
+其中 $\beta$, $\gamma$ 为耦合系数，反映不同维度对结构稳定性的贡献权重。该形式确保：任何一个维度趋近于零，都会导致整体强度急剧下降。
 
 ---
 
@@ -103,7 +103,7 @@ $$
 
 概率动力学第一定理（概率必然判据）：
 
-\boxed{$nabla$ I_{$\text{intrinsic}$} > \|$\mathcal{E}$_{$\text{ext}$}\| \quad $\text{且}$ \quad I > I_{$\text{crit}$}}
+\boxed{$\nabla$ I_{$\text{intrinsic}$} > \|$\mathcal{E}$_{$\text{ext}$}\| \quad $\text{且}$ \quad I > I_{$\text{crit}$}}
 
 当且仅当这两个条件同时满足时，结构的未来演化路径是概率必然的——即系统必然收敛到其吸引子，后续历史只是过程的展开。
 
@@ -137,10 +137,10 @@ $$
 
 其中：
 
-· $alpha$ $nabla$^2 I 为空间扩散
-· $beta$ I (1 - I/I_{$\text{max}$}) 为逻辑斯蒂增长（自增强）
-· -$gamma$ I 为衰减（熵扩散消耗）
-· $eta$(t) 为随机噪声
+· $\alpha$ $\nabla$^2 I 为空间扩散
+· $\beta$ I (1 - I/I_{$\text{max}$}) 为逻辑斯蒂增长（自增强）
+· -$\gamma$ I 为衰减（熵扩散消耗）
+· $\eta$(t) 为随机噪声
 
 4.3 相变触发条件
 
@@ -150,13 +150,13 @@ $$
 P_{\text{trigger}} = \Theta(|\nabla I| - I_{\text{th}})
 $$
 
-其中 $Theta$ 为阶跃函数，I_{$\text{th}$} 为临界强度梯度。
+其中 $\Theta$ 为阶跃函数，I_{$\text{th}$} 为临界强度梯度。
 
 4.4 吸引子锁定
 
-当 I > I_{$\text{crit}$} 且 $nabla$ I_{$\text{intrinsic}$} > \|$\mathcal{E}$_{$\text{ext}$}\| 时，方程中的非线性项主导，随机项可视为微扰。系统进入吸引子盆地，演化由确定性方程主导：
+当 I > I_{$\text{crit}$} 且 $\nabla$ I_{$\text{intrinsic}$} > \|$\mathcal{E}$_{$\text{ext}$}\| 时，方程中的非线性项主导，随机项可视为微扰。系统进入吸引子盆地，演化由确定性方程主导：
 
-\frac{$partial$ $\mathcal{P}$}{$partial$ t} $approx$ $\mathcal{F}$(I) $cdot$ $\mathcal{P}$ + $\text{小扰动}$
+\frac{$\partial$ $\mathcal{P}$}{$\partial$ t} $\approx$ $\mathcal{F}$(I) $\cdot$ $\mathcal{P}$ + $\text{小扰动}$
 
 ---
 
