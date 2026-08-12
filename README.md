@@ -27,8 +27,8 @@ This is not an open-source project. These are signposts — for those who have a
 
 ## 快速开始 · Quick Start
 
-1. 阅读 [论文索引](INDEX.md) — 按阅读顺序排列 | Read [INDEX](INDEX.md) — ordered for progressive reading
-2. 浏览 [papers/](papers/) — 34 篇中英双语 | Browse [papers/](papers/) — 34 papers, bilingual
+1. 阅读 [论文索引（中文）](INDEX.md) | Read [Paper Index (English)](INDEX.md) — 按阅读顺序排列，中英对照
+2. 浏览 [papers/](papers/) — 34 篇 · 中英双语 · 国旗标记
 3. 从离你最近的学科入口开始 | Start from the discipline closest to you
 
 ## 三层协作 · Three Layers
