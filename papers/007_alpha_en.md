@@ -5,7 +5,6 @@
 
 ---
 
-
 Abstract
  
 Aiming at the first cause dilemma faced by traditional cosmology, the probability paradox of the anthropic principle, and the measure conundrum of the quantum many-worlds interpretation, this paper constructs a hierarchical cosmic probability model based on standard measure theory and Kolmogorov's axiomatic probability theory. The core proposition of the model is: the global outer measure of the total-state universe space containing all possibilities is strictly zero; while for every local probability bubble satisfying causal closure and rule self-consistency, its intrinsic probability measure must be normalized to 1. Without introducing additional physical hypotheses, the model only through the hierarchical division of measures and perspective transformation, realizes a self-consistent explanation of "creation ex nihilo" of the origin of the universe, and resolves the classic intuitive contradiction between "zero probability and possible occurrence". It provides a unified mathematical framework for the core problems of cosmology, quantum interpretation, and probability philosophy.
