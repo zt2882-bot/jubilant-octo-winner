@@ -3,7 +3,6 @@
 **ε·跨域同构** | EN
 
 ---
-
 Chapter 6: Non-Markovian Extension: The Ramanujan Mathematical Framework
 
 6.1 Introduction
