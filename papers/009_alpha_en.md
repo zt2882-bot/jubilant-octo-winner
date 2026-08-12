@@ -345,15 +345,15 @@ Under the following terms:
  
 Glossary of Core Terms
  
-English Term Chinese Term Core Definition 
-Global Probability Space 全局概率空间 The only ontology of this framework, the full probability field containing all possibilities of the universe, without a priori anchors or constraints 
-Probability Bubble 概率泡 A locally self-consistent probability subspace in the global probability space, the basic unit of structure 
-Local Entropy 局域熵 Shannon entropy describing the concentration of probability distribution in a probability bubble, the core measure of structural evolution 
-Entropy Compression 熵压缩 The decrease of local entropy, corresponding to the increased concentration of probability distribution and information condensation, the core driving force of structure generation 
-Entropy Diffusion 熵扩散 The increase of local entropy, corresponding to the dispersion of probability distribution and information dilution, the core cause of structure dissipation 
-Phase Transition Threshold 相变阈值 The critical phase transition probability that triggers structure generation, beyond which fluctuations become structural seeds 
-Entropic Imprinting 熵印 The inheritance mechanism of the entropy information and dynamic rules of the parent bubble by the sub-probability bubble, the core of cross-scale isomorphism 
-Attractor Coupling Network 吸引子耦合网络 The global network formed by the coupling of stable probability bubbles, the core stabilization mechanism of complex structures 
+English Term Chinese Term Core Definition
+Global Probability Space 全局概率空间 The only ontology of this framework, the full probability field containing all possibilities of the universe, without a priori anchors or constraints
+Probability Bubble 概率泡 A locally self-consistent probability subspace in the global probability space, the basic unit of structure
+Local Entropy 局域熵 Shannon entropy describing the concentration of probability distribution in a probability bubble, the core measure of structural evolution
+Entropy Compression 熵压缩 The decrease of local entropy, corresponding to the increased concentration of probability distribution and information condensation, the core driving force of structure generation
+Entropy Diffusion 熵扩散 The increase of local entropy, corresponding to the dispersion of probability distribution and information dilution, the core cause of structure dissipation
+Phase Transition Threshold 相变阈值 The critical phase transition probability that triggers structure generation, beyond which fluctuations become structural seeds
+Entropic Imprinting 熵印 The inheritance mechanism of the entropy information and dynamic rules of the parent bubble by the sub-probability bubble, the core of cross-scale isomorphism
+Attractor Coupling Network 吸引子耦合网络 The global network formed by the coupling of stable probability bubbles, the core stabilization mechanism of complex structures
 Cross-Scale Isomorphism 跨尺度同构 Systems of different scales and natures follow exactly the same dynamic rules of probability bubbles
 
 ---
