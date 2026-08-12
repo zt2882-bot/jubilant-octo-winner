@@ -5,6 +5,7 @@
 
 ---
 
+
 $$
 This note supplements the paper "Global Zero Measure and Local Normalization: A Self-Consistent Probability Bubble Universe Model Based on Measure Theory" by addressing three foundational questions raised during peer discussion. The answers are framed within the core distinction of the model: inside a self-consistent probability bubble (the “window”) vs. the total-state universe \mathcal{U} (outside any window).
 $$
