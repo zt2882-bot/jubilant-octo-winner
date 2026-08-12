@@ -28,9 +28,9 @@ $$
 · If the rule set were uncountable, there would exist rules that cannot be distinguished or defined within \mathcal{B}. This leads to:
 $$
 
-  · Undecidable propositions,
-  · Uncontrollable couplings,
-  · Violation of the very notion of “self-consistency”.
+· Undecidable propositions,
+· Uncontrollable couplings,
+· Violation of the very notion of “self-consistency”.
 
 Thus, within any self-consistent bubble, the collection of intrinsic rules is at most countable. This follows from the requirements of definability, predictability, and the countable nature of language/formal systems accessible to any internal observer.
 
