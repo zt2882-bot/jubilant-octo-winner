@@ -23,6 +23,8 @@
 - 🇨🇳 [`010_alpha_zh.md`](papers/010_alpha_zh.md) — 概率泡宇宙：基于熵驱动概率结构的涌现框架
 - 🇬🇧 [`011_delta_en.md`](papers/011_delta_en.md) — Gravity as Probabilistic Orientation: An Interpretation within the Probabilistic Dynamics Framework
 - 🇨🇳 [`012_delta_zh.md`](papers/012_delta_zh.md) — 引力作为概率指向：概率动力学框架下的引力解释
+- 🇨🇳 [`035_physics_zh.md`](papers/035_physics_zh.md) — 引力作为拓扑结构概率指向的具象化：月球引力异常的结构自洽再解释
+- 🇬🇧 [`036_physics_en.md`](papers/036_physics_en.md) — Gravity as the Materialization of Topological-Structural Probabilistic Orientation
 - 🇬🇧 [`013_delta_en.md`](papers/013_delta_en.md) — Probabilistic Dynamics: A Theory of Evolution Based on Probability Intensity and Intrinsic Gradient
 - 🇨🇳 [`014_delta_zh.md`](papers/014_delta_zh.md) — 概率动力学：一种基于概率强度与内在梯度的演化理论
 
@@ -72,5 +74,5 @@
 
 ---
 
-*34 papers · 中英双语 · bilingual*
+*36 papers · 中英双语 · bilingual*
 *constraint.seen@proton.me*
