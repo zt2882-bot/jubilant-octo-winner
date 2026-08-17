@@ -28,6 +28,8 @@
 - 🇬🇧 [`013_delta_en.md`](papers/013_delta_en.md) — Probabilistic Dynamics: A Theory of Evolution Based on Probability Intensity and Intrinsic Gradient
 - 🇨🇳 [`014_delta_zh.md`](papers/014_delta_zh.md) — 概率动力学：一种基于概率强度与内在梯度的演化理论
 
+- 🇬🇧 [`037_perception_en.md`](papers/037_perception_en.md) — The Perception-First Axiom: Formalization and Cross-Domain Validation
+
 ## 认知与感知 Cognition & Perception
 
 - 🇬🇧 [`015_delta_en.md`](papers/015_delta_en.md) — A Human Consensus-Oriented Open Quantitative Framework for Image Information
