@@ -239,6 +239,8 @@ $$
 
 在数学形式层面，二者的对应同样精确。该理论的核心形式化机制为 RSVP 三场——区分密度场 Φ、可容许流 v 与熵场 S，其中熵被定义为条件互信息损失的积分[11]；与之对应，本文以全域外测度 P_total 与泡内内禀测度 P_B 的层级划分为核心，熵驱动同样体现为可恢复信息的渐进损失。尤其值得注意的是，该理论提出"可容许层级"结构 M_adm → M_proj → M_obs，其投影映射 π 非单射亦非满射，由此产生可诊断的"信息缺口"（diagnostic gap）[11]——这与本文"全域视角 → 泡内视角"的测度层级转换，在数学上是同一类结构：均为不可逆的视角投影，均以"层级间信息损失"作为结构形成的代价。此外，该理论引入的"深度二闭合"（closure depth = 2）不变量，与本文自洽概率泡的"因果闭合"要求，指向同一类"结构闭合的阶数"概念。
 
+尤为深刻的一点是，前述"被淹没的结构再涌现概率上升"这一命题，在非线性动力学中具有一个精确且成熟的对应——亚临界分岔的滞回（hysteresis）。对于形如 $\dot{q} = -h q + c q^3 - q^5$ 的亚临界正规形式，当控制参数 h 往返扫动时，系统呈现历史依赖：结构在参数正扫时的涌现阈值，高于参数回扫时的湮灭阈值，即"曾经涌现过的结构，其再涌现阈值更低"[12]。这一滞回机制，正是"被磨平但未消失的结构"更易"再涌现"的数学根源；它同时为"结构押韵"提供了动力学基础——结构的痕迹以滞回的形式被系统保留，构成其"再涌现"的记忆。这一历史依赖机制，与以因果涌现（causal emergence）为代表的涌现量化研究[13]，分别从"动力学记忆"与"跨尺度因果"两个侧面，刻画了同一种"结构何以在磨平后重现"的现象。
+
 七、参考文献
  
 [1] 柯尔莫哥洛夫 A N. 概率论基础[M]. 北京: 高等教育出版社, 2009.
@@ -252,6 +254,8 @@ $$
 [9] 赵凯华, 罗蔚茵. 新概念物理教程·热学[M]. 北京: 高等教育出版社, 2005.
 [10] Billingsley P. Probability and Measure[M]. New York: John Wiley & Sons, 2012.
 [11] standardgalactic. Numerical claims are conserved quantities: the smoothness paradox and RSVP cosmology[EB/OL]. GitHub, 2026. https://github.com/standardgalactic/cosmology.
+[12] Dessup T, Coste C, Saint-Jean M. Hysteretic and intermittent regimes in the subcritical bifurcation of a quasi-one-dimensional system of interacting particles[J]. Physical Review E, 2016, 93(1): 012105.
+[13] Hoel E P, Albantakis L, Tononi G. Quantifying causal emergence shows that macro can beat micro[J]. Proceedings of the National Academy of Sciences, 2013, 110(49): 19790-19795.
 
 ---
 
