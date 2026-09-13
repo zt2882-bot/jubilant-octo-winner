@@ -214,6 +214,8 @@ P_{$\text{flip}$} = f(|$\mathbf{B}$_{$\text{local}$}|, T, $\text{材料参数}$)
 
 本文给出了磁筹计算器的理论设定和核心机制，建立了与概率泡宇宙的严格对应，并分析了其计算能力。后续研究将聚焦于具体化材料参数、写出闭合动力学方程、设计读出和初始化方案，最终实现这一“概率泡物理模拟器”的工程原型。
 
+值得注意的是，在"物理实现"之外，还存在一种"计算实现"的互补路径。standardgalactic 在其 RSVP 宇宙论中，将"结构在平滑背景中的再形成"（重结 reknotting）定义为一个可证伪的判据——动力学不稳定、递归可及与非线性持续三者缺一不可，并以约化模型 $\dot{q} = -h q + c q^3 - q^5$ 写成了可运行的代码实验[6]。该工作与本文的磁筹计算器形成互补：本文给出概率泡的物理映射，该工作给出结构再涌现的计算判据；二者共同表明，概率泡宇宙的动力学机制，既可以用磁畴实现，也可以用亚临界分岔方程验证。
+
 ---
 
 参考文献
@@ -227,6 +229,8 @@ P_{$\text{flip}$} = f(|$\mathbf{B}$_{$\text{local}$}|, T, $\text{材料参数}$)
 [4] Lloyd, S. (2000). Ultimate physical limits to computation. Nature, 406(6799), 1047-1054.
 
 [5] Feynman, R. P. (1982). Simulating physics with computers. International Journal of Theoretical Physics, 21(6), 467-488.
+
+[6] standardgalactic. Numerical claims are conserved quantities: the smoothness paradox and RSVP cosmology[EB/OL]. GitHub, 2026. https://github.com/standardgalactic/cosmology.
 
 ---
 
