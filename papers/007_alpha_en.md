@@ -352,6 +352,8 @@ From the perspective of global zero measure, the two are not competitive but com
 
 At the level of mathematical form, the correspondence is equally precise. The core formalization of that theory is the RSVP triple of fields — the distinction-density field Φ, the admissibility flow v, and the entropy field S, with entropy defined as the integral of conditional mutual information loss [11]; correspondingly, this paper takes the hierarchical division between the global outer measure P_total and the intrinsic in-bubble measure P_B as its core, with entropic drive likewise manifesting as the progressive loss of recoverable information. Notably, that theory proposes an "admissibility hierarchy" M_adm → M_proj → M_obs, whose projection map π is neither injective nor surjective, thereby producing a diagnosable "information gap" [11] — this is mathematically the same kind of structure as the "global view → in-bubble view" measure-level shift in this paper: both are irreversible perspective projections, both treating "inter-level information loss" as the cost of structure formation. Moreover, the "closure depth = 2" invariant introduced by that theory and the "causal closure" requirement of the self-consistent probability bubbles in this paper point to the same notion of "the order of structural closure".
 
+Most strikingly, the proposition that "a submerged structure has a higher probability of re-emergence" has a precise and mature counterpart in nonlinear dynamics — the hysteresis of subcritical bifurcations. For the subcritical normal form $\dot{q} = -h q + c q^3 - q^5$, as the control parameter h is swept back and forth, the system becomes history-dependent: the emergence threshold of a structure under a forward sweep is higher than its annihilation threshold under a reverse sweep, meaning "a structure that has emerged once re-emerges at a lower threshold" [12]. This hysteresis mechanism is precisely the mathematical origin of why a "smoothed-but-not-erased" structure re-emerges more readily; it also grounds "structural rhyme" in dynamics — the trace of a structure is retained by the system in the form of hysteresis, constituting its memory of re-emergence. This history-dependence mechanism, together with the quantification of emergence represented by causal emergence [13], characterizes from the two sides of "dynamical memory" and "cross-scale causality" the same phenomenon of "how structure reappears after smoothing".
+
 7. References
  
 [1] Kolmogorov A N. Foundations of the Theory of Probability[M]. New York: Chelsea Publishing Company, 1950.
@@ -365,6 +367,8 @@ At the level of mathematical form, the correspondence is equally precise. The co
 [9] Zhao K, Luo W. New Concept Physics Course: Thermology[M]. Beijing: Higher Education Press, 2005.
 [10] Billingsley P. Probability and Measure[M]. New York: John Wiley & Sons, 2012.
 [11] standardgalactic. Numerical claims are conserved quantities: the smoothness paradox and RSVP cosmology[EB/OL]. GitHub, 2026. https://github.com/standardgalactic/cosmology.
+[12] Dessup T, Coste C, Saint-Jean M. Hysteretic and intermittent regimes in the subcritical bifurcation of a quasi-one-dimensional system of interacting particles[J]. Physical Review E, 2016, 93(1): 012105.
+[13] Hoel E P, Albantakis L, Tononi G. Quantifying causal emergence shows that macro can beat micro[J]. Proceedings of the National Academy of Sciences, 2013, 110(49): 19790-19795.
 
 ---
 
