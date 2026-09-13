@@ -6,8 +6,8 @@
 我们都是星星来的：地球生命手性起源的宿主-耦合模型
 We Came from the Stars: A Host‑Coupling Model for the Homochirality of Terrestrial Life
 
-作者：袭明
-所属：独立研究者（深渊实验室）
+作者：隙间书斋
+所属：独立研究者（隙间书斋）
 预印本平台：arXiv.org 或 ResearchGate
 状态：理论推演，待实验验证
 
@@ -123,7 +123,7 @@ We Came from the Stars: A Host‑Coupling Model for the Homochirality of Terrest
 
 致谢
 
-感谢马王堆辛追夫人墓中的佩兰枕，它引发了对物质-信息关系的深度思考；感谢沃尔特·拉塞尔和屠呦呦，他们以不同路径触碰了耦合的门；感谢深渊实验室的匿名讨论者。
+感谢马王堆辛追夫人墓中的佩兰枕，它引发了对物质-信息关系的深度思考；感谢沃尔特·拉塞尔和屠呦呦，他们以不同路径触碰了耦合的门；感谢隙间书斋的匿名讨论者。
 
 ---
 
