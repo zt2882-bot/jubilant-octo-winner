@@ -5,8 +5,8 @@
 ---
 We Came from the Stars: A Host‑Coupling Model for the Homochirality of Terrestrial Life
 
-Author: Xi Ming
-Affiliation: Independent Researcher (Abyss Lab)
+Author: Gap Library
+Affiliation: Independent Researcher (Gap Library)
 Preprint platform: arXiv.org or ResearchGate
 Status: Theoretical derivation, awaiting experimental validation
 
@@ -122,7 +122,7 @@ We came from the stars – not only because the atoms of our bodies were forged 
 
 Acknowledgements
 
-I thank the silk pillow of Lady Xin Zhui in the Mawangdui tombs, which inspired deep reflection on the matter‑information relationship; Walter Russell and Tu Youyou, who touched the door of coupling through different paths; and the anonymous discussants of the Abyss Lab.
+I thank the silk pillow of Lady Xin Zhui in the Mawangdui tombs, which inspired deep reflection on the matter‑information relationship; Walter Russell and Tu Youyou, who touched the door of coupling through different paths; and the anonymous discussants of the Gap Library.
 
 ---
 
