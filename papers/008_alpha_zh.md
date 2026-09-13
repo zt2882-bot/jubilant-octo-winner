@@ -227,6 +227,16 @@ $$
 3. 内禀测度与物理规则的关联研究：模型明确了泡内的内禀测度与物理规则的绑定关系，后续可进一步研究不同的自洽规则体系，如何决定对应的内禀概率测度，以及该测度与量子力学玻恩规则的内在关联；
 4. 泡间相互作用的可能性研究：模型假设自洽泡具备因果闭合性，与泡外状态无不可控耦合，但后续可研究不同自洽泡之间是否存在可定义的、微弱的相互作用，以及这种相互作用是否会产生可观测的物理效应。
  
+6.5 相关工作的结构对照：RSVP 宇宙论
+
+在本文模型之外，存在一项独立发展、却在核心结构上与"自洽概率泡"高度同构的工作——standardgalactic 提出的 RSVP 宇宙论，其核心命题为"数值声明是守恒量（Numerical Claims Are Conserved Quantities）"[11]。该理论同样将宇宙描述为"连续满布（plenum）中的局域区分（distinction）"：物质、星系、恒星、生命，皆是满布中形成的局域 distinction，并通过持续的"修复（repair）"与"重结（reknotting）"过程得以维系。
+
+其与本模型的结构对应如下：满布（plenum）对应本文的全态空间 $\mathcal{U}$；局域 distinction 对应本文的自洽概率泡 $\mathcal{B}$；平滑（smoothing）——熵增导致的区分磨平——对应本文泡内的熵扩散筛选；而重结（reknotting），即在平滑之后重新形成 distinction 的过程，正对应本文"六"节展望中所提出的"泡的形成与再涌现机制"这一开放问题。
+
+尤为值得注意的是，该工作为其核心判据"重结"给出了可证伪的实验定义：一个重结事件必须同时满足三个条件——动力学不稳定（dynamical instability）、递归可及（recursive accessibility）与非线性持续（nonlinear persistence），三者缺一不可[11]。这一"三闸门"判据，为本文尚未解决的"自洽泡动力学形成机制"提供了可执行、可被反例推翻的形式化起点。
+
+从全域零测的视角看，二者并非竞争而是互补：本文给出"全域测度为何为 0、局域为何归一"的测度论基座；RSVP 理论则给出"局域结构如何在平滑背景中反复形成"的动力学机制。二者独立到达了同一结构的两个侧面，这本身即是"自洽概率泡"作为跨理论结构签名的又一旁证。
+
 七、参考文献
  
 [1] 柯尔莫哥洛夫 A N. 概率论基础[M]. 北京: 高等教育出版社, 2009.
@@ -239,6 +249,7 @@ $$
 [8] Tegmark M. The Mathematical Universe[J]. Foundations of Physics, 2008, 38(2): 101-150.
 [9] 赵凯华, 罗蔚茵. 新概念物理教程·热学[M]. 北京: 高等教育出版社, 2005.
 [10] Billingsley P. Probability and Measure[M]. New York: John Wiley & Sons, 2012.
+[11] standardgalactic. Numerical claims are conserved quantities: the smoothness paradox and RSVP cosmology[EB/OL]. GitHub, 2026. https://github.com/standardgalactic/cosmology.
 
 ---
 
