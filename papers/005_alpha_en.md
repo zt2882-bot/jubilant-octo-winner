@@ -277,6 +277,8 @@ The magnetic chip calculator provides an ideal platform for physically realizing
 
 This paper has presented the theoretical framework and core mechanisms of the magnetic chip calculator, established its rigorous correspondence with the probabilistic bubble universe, and analyzed its computational capabilities. Subsequent research will focus on specifying material parameters, formulating closed dynamical equations, designing readout and initialization schemes, and ultimately realizing an engineering prototype of this "probability bubble physical simulator."
 
+It is worth noting that, in addition to "physical realization", there exists a complementary path of "computational realization". In their RSVP cosmology, standardgalactic defines the "re-formation of structure against a smoothing background" (reknotting) as a falsifiable criterion — dynamical instability, recursive accessibility, and nonlinear persistence, none of which can be omitted — and implements it as runnable code using the reduced model $\dot{q} = -h q + c q^3 - q^5$ [6]. This work complements the magnetic chip calculator of this paper: this paper provides the physical mapping of probability bubbles, while that work provides a computational criterion for structural re-emergence; together they show that the dynamical mechanism of the probability bubble universe can be realized by magnetic domains and verified by a subcritical bifurcation equation.
+
 ---
 
 References
@@ -290,6 +292,8 @@ References
 [4] Lloyd, S. (2000). Ultimate physical limits to computation. Nature, 406(6799), 1047-1054.
 
 [5] Feynman, R. P. (1982). Simulating physics with computers. International Journal of Theoretical Physics, 21(6), 467-488.
+
+[6] standardgalactic. Numerical claims are conserved quantities: the smoothness paradox and RSVP cosmology[EB/OL]. GitHub, 2026. https://github.com/standardgalactic/cosmology.
 
 ---
 
