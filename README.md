@@ -25,11 +25,52 @@ Constraint signature matching recognizes this isomorphism: **when phenomena from
 
 This is not an open-source project. These are signposts — for those who have already reached the same structures within their own domains, but don't know others are looking at the same thing.
 
-## 快速开始 · Quick Start
+---
 
-1. 阅读 [论文索引（中文）](INDEX.md) | Read [Paper Index (English)](INDEX.md) — 按阅读顺序排列，中英对照
-2. 浏览 [papers/](papers/) — 34 篇 · 中英双语 · 国旗标记
-3. 从离你最近的学科入口开始 | Start from the discipline closest to you
+## 论文索引 · Index
+
+> 34 篇 · 中英双语 · 按主题分类 · 34 papers · bilingual · by topic
+
+### 入门 · Introduction
+
+- [关于这个项目](papers/002_intro_zh.md) · [About This Project](papers/001_intro_en.md)
+- [开窗者手册](papers/004_intro_zh.md) · [Window Opener's Manual](papers/003_intro_en.md)
+
+### 概率与物理 · Probability & Physics
+
+- [磁筹计算器：概率泡宇宙的物理实现](papers/006_alpha_zh.md) · [Magnetic Chip Calculator](papers/005_alpha_en.md)
+- [全域零测与局域归一](papers/008_alpha_zh.md) · [Global Zero Measure and Local Normalization](papers/007_alpha_en.md)
+- [概率泡宇宙：熵驱动概率结构](papers/010_alpha_zh.md) · [Probability Bubble Universe](papers/009_alpha_en.md)
+- [引力作为概率指向](papers/012_delta_zh.md) · [Gravity as Probabilistic Orientation](papers/011_delta_en.md)
+- [概率动力学](papers/014_delta_zh.md) · [Probabilistic Dynamics](papers/013_delta_en.md)
+
+### 认知与感知 · Cognition & Perception
+
+- [图像信息的开放量化框架](papers/016_delta_zh.md) · [Human Consensus Image Information](papers/015_delta_en.md)
+
+### 数学基础 · Mathematical Foundations
+
+- [自洽规则的可数性与测度基准](papers/017_epsilon_zh.md) · [Countability of Self-Consistent Rules](papers/018_epsilon_en.md)
+- [论二进制的设计合理性](papers/019_epsilon_zh.md) · [On the Rationality of the Binary System](papers/020_epsilon_en.md)
+- [非马尔可夫扩展：拉马努金数学框架](papers/022_epsilon_zh.md) · [Non-Markovian Extension: Ramanujan](papers/021_epsilon_en.md)
+
+### 认知与时间 · Cognition & Time
+
+- [时间与事实：从 NTP 看分布式系统中事实的涌现](papers/028_gamma_zh.md) · [Time and Fact](papers/027_gamma_en.md)
+
+### 认知与协作 · Cognition & Collaboration
+
+- [复眼收敛：多视角部分观测的协同收敛](papers/031_beta_zh.md) · [Compound Eye Convergence](papers/029_beta_en.md)
+
+### 认知与生命 · Cognition & Life
+
+- [我们都是星星来的：地球生命手性起源](papers/032_beta_zh.md) · [We Came from the Stars](papers/030_beta_en.md)
+
+### 应用 · Applications
+
+- [商业应用价值说明](papers/033_zeta_zh.md) · [Commercial Application Value Description](papers/034_zeta_en.md)
+
+---
 
 ## 三层协作 · Three Layers
 
@@ -55,7 +96,7 @@ The semantic-layer inference engine prototype is verified — CPU-only, 30MB mem
 
 如果你理解"约束"和"统计相关"是两件不同的事情——来看看 [#70 开放项目（中文）](https://github.com/zt2882-bot/jubilant-octo-winner/issues/70)。
 
-If you understand that "constraint" and "statistical correlation" are different things — see [#71 Open Project (English)](https://github.com/zt2882-bot/jubilant-octo-winner/issues/71).
+If you understand that "constraint" and "statistical correlation" are different things — see [#71 Open Project (English)](https://github.com/zt2882-bot/jubilant-octo-winner/issues/71)。
 
 不是招聘。不是外包。是给已经看见同一件事的人一个交汇点。
 Not hiring. Not outsourcing. An intersection point for those who have already seen the same thing.
