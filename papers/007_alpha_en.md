@@ -340,6 +340,16 @@ At the same time, the model also provides a number of expandable directions for 
 3. Research on the correlation between intrinsic measure and physical rules: The model clarifies the binding relationship between the intrinsic measure inside the bubble and the physical rules. Follow-up research can further study how different self-consistent rule systems determine the corresponding intrinsic probability measure, and the internal correlation between this measure and the Born rule of quantum mechanics.
 4. Research on the possibility of inter-bubble interactions: The model assumes that self-consistent bubbles have causal closure and no uncontrollable coupling with states outside the bubble, but follow-up research can study whether there are definable, weak interactions between different self-consistent bubbles, and whether such interactions will produce observable physical effects.
  
+6.5 Structural correspondence with related work: RSVP cosmology
+
+Beyond the present model, there exists an independently developed work that is highly isomorphic in core structure with the "self-consistent probability bubble" — the RSVP cosmology proposed by standardgalactic, whose core proposition is that "Numerical Claims Are Conserved Quantities" [11]. This theory likewise describes the universe as "local distinctions within a continuous plenum": matter, galaxies, stars, and life are all local distinctions formed within the plenum, sustained through ongoing processes of "repair" and "reknotting".
+
+Its structural correspondence with the present model is as follows: the plenum corresponds to the universal space $\mathcal{U}$ of this paper; local distinctions correspond to the self-consistent probability bubbles $\mathcal{B}$; smoothing — the entropic erosion of distinctions — corresponds to the entropic-diffusion screening within a bubble; and reknotting, the process of re-forming distinctions after smoothing, corresponds precisely to the open problem of "bubble formation and re-emergence mechanism" raised in Section 6 of this paper.
+
+Notably, this work gives a falsifiable experimental definition of its core criterion "reknotting": a reknotting event must simultaneously satisfy three conditions — dynamical instability, recursive accessibility, and nonlinear persistence — none of which can be omitted [11]. This "three-gate" criterion provides an executable, counterexample-refutable formal starting point for the unresolved "dynamical formation mechanism of self-consistent bubbles" in this paper.
+
+From the perspective of global zero measure, the two are not competitive but complementary: this paper provides the measure-theoretic foundation of "why the global measure is zero and the local measure is normalized"; RSVP theory provides the dynamical mechanism of "how local structures repeatedly form against a smoothing background". The two independently arrived at two sides of the same structure, which itself is another piece of circumstantial evidence for the "self-consistent probability bubble" as a cross-theory structural signature.
+
 7. References
  
 [1] Kolmogorov A N. Foundations of the Theory of Probability[M]. New York: Chelsea Publishing Company, 1950.
@@ -352,6 +362,7 @@ At the same time, the model also provides a number of expandable directions for 
 [8] Tegmark M. The Mathematical Universe[J]. Foundations of Physics, 2008, 38(2): 101-150.
 [9] Zhao K, Luo W. New Concept Physics Course: Thermology[M]. Beijing: Higher Education Press, 2005.
 [10] Billingsley P. Probability and Measure[M]. New York: John Wiley & Sons, 2012.
+[11] standardgalactic. Numerical claims are conserved quantities: the smoothness paradox and RSVP cosmology[EB/OL]. GitHub, 2026. https://github.com/standardgalactic/cosmology.
 
 ---
 
